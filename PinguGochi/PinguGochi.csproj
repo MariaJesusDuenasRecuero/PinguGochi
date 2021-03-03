@@ -97,5 +97,11 @@
   <ItemGroup>
     <Resource Include="log-tamagochi.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fraaap connects candidates and employers_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Woodcut art by Oscar Droege.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
