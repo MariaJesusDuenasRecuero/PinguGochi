@@ -87,26 +87,10 @@ public partial class MainWindow : Window
             }
         }
 
-
-        /// metodo para cambair los colores a las barras de progreso segun esten a 15,25,50 y 100
-       /* private void Cambio_colores(object sender, EventArgs e)
-        {
-            if (prgBar_Alimento.Value  == 50)
-            {
-                //prgBar_Alimento.Foreground.
-
-            }
-        }*/
-        /// <summary>
-        /// instalar las 3 barras y calcular el tiempo que se juega : varieble q suma 
-        /// </summary>
-
-
         private void btn_Alimentar_Click(object sender, RoutedEventArgs e)
         {
             this.prgBar_Alimento.Value += 5;
             decremento += 2;
-
         }
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
@@ -121,12 +105,25 @@ public partial class MainWindow : Window
             decremento += 2;
         }
 
-       
+        /// metodo para cambair los colores a las barras de progreso segun esten a 15,25,50 y 100
+        /* private void Cambio_colores(object sender, EventArgs e)
+         {
+             if (prgBar_Alimento.Value  == 50)
+             {
+                 //prgBar_Alimento.Foreground.
 
-        private void cambiar_fondo(object sender, MouseButtonEventArgs e)
-        {
-            this.imag_nieve.Source = ((Image)sender).Source; //asignar fondo generico
-        }
+             }
+         }*/
+        /// <summary>
+        /// instalar las 3 barras y calcular el tiempo que se juega : varieble q suma 
+        /// </summary>
+
+
+
+
+
+
+
 
     }
 }
