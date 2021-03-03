@@ -21,15 +21,15 @@
             <RowDefinition Height="281*"/>
             <RowDefinition Height="54*"/>
         </Grid.RowDefinitions>
-        <ProgressBar x:Name="prgBar_Alimento1" Grid.Column="1" Margin="10,15,5,5" Value="100"/>
-        <ProgressBar x:Name="prgB_Cansancio1" Grid.Column="1" Margin="10,16,5,5" Grid.Row="1" Value="100"/>
-        <ProgressBar x:Name="prgB_Diversión1" Grid.Column="1" Margin="10,10,5,10" Grid.Row="2" Value="100"/>
-        <Button x:Name="btn_Alimentar1" Content="Alimentar" Grid.Column="2" Margin="10,12" FontSize="18" FontFamily="Verdana" Click="btn_Alimentar_Click"/>
-        <Button x:Name="btn_Descansar1" Content="Descansar" Grid.Column="2" Height="31" Margin="10,13,10,0" Grid.Row="1" VerticalAlignment="Top" FontSize="18" FontFamily="Verdana" Click="btn_Descansar_Click"/>
-        <Button x:Name="btn_divertir1" Content="Jugar" Grid.Column="2" Margin="10,13" Grid.Row="2" FontSize="18" FontFamily="Verdana" Click="btn_divertir_Click"/>
-        <Label x:Name="lbl_GameOver1" Content="GAME OVER" Grid.Column="1" Margin="75,233,63,48" Grid.Row="4" FontSize="36" Grid.RowSpan="2" Visibility="Hidden"/>
-        <Label x:Name="lbl_puntuacionJugador1" Content="Puntuación:" Grid.Column="1" HorizontalAlignment="Left" Margin="55,24,0,-12" Grid.Row="5" VerticalAlignment="Top" FontSize="24" Visibility="Hidden" Height="42" Width="134"/>
-        <Label x:Name="lbl_tiempoVida1" Content="" Grid.Column="1" Margin="202,23,5,10" Grid.Row="5" FontSize="24" Visibility="Hidden"/>
+        <ProgressBar x:Name="prgBar_Alimento" Grid.Column="1" Margin="10,15,5,5" Value="100"/>
+        <ProgressBar x:Name="prgB_Cansancio" Grid.Column="1" Margin="10,16,5,5" Grid.Row="1" Value="100"/>
+        <ProgressBar x:Name="prgB_Diversión" Grid.Column="1" Margin="10,10,5,10" Grid.Row="2" Value="100"/>
+        <Button x:Name="btn_Alimentar" Content="Alimentar" Grid.Column="2" Margin="10,12" FontSize="18" FontFamily="Verdana" Click="btn_Alimentar_Click"/>
+        <Button x:Name="btn_Descansar" Content="Descansar" Grid.Column="2" Height="31" Margin="10,13,10,0" Grid.Row="1" VerticalAlignment="Top" FontSize="18" FontFamily="Verdana" Click="btn_Descansar_Click"/>
+        <Button x:Name="btn_divertir" Content="Jugar" Grid.Column="2" Margin="10,13" Grid.Row="2" FontSize="18" FontFamily="Verdana" Click="btn_divertir_Click"/>
+        <Label x:Name="lbl_GameOver" Content="GAME OVER" Grid.Column="1" Margin="75,233,63,48" Grid.Row="4" FontSize="36" Grid.RowSpan="2" Visibility="Hidden"/>
+        <Label x:Name="lbl_puntuacionJugador" Content="Puntuación:" Grid.Column="1" HorizontalAlignment="Left" Margin="55,24,0,-12" Grid.Row="5" VerticalAlignment="Top" FontSize="24" Visibility="Hidden" Height="42" Width="134"/>
+        <Label x:Name="lbl_tiempoVida" Content="" Grid.Column="1" Margin="202,23,5,10" Grid.Row="5" FontSize="24" Visibility="Hidden"/>
         <Canvas Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" Height="526" Margin="10" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Center" Width="465" Background="#7F64CFE0">
             <Path Data="M84.499999,0.5 C130.33963,0.5 167.5,35.869503 167.5,79.5 167.5,93.816254 163.49908,107.24308 156.50345,118.8228 L155.5806,120.30856 156.48234,121.84391 C162.87106,133.03767 166.5,145.86548 166.5,159.5 166.5,203.13049 129.33963,238.5 83.499999,238.5 37.660365,238.5 0.49999857,203.13049 0.5,159.5 0.49999857,145.18375 4.5009072,131.75691 11.496548,120.1772 L12.419404,118.69144 11.51765,117.15609 C5.1289406,105.96232 1.4999986,93.134529 1.4999999,79.5 1.4999986,35.869503 38.660365,0.5 84.499999,0.5 z" Fill="#FF393940" Height="239" Canvas.Left="142.5" Stretch="Fill" Stroke="Black" Canvas.Top="158" Width="168"/>
             <Path Fill="White" Canvas.Left="159.586" Stroke="Black" Canvas.Top="200.673" Width="133.642" Data="M41.498439,0.5 C51.40467,0.49999982 60.490306,4.2858829 67.577255,10.588179 L67.587692,10.597925 67.613548,10.57603 C74.453834,5.0637207 82.944923,1.7993622 92.143569,1.7993629 114.78638,1.7993622 133.142,21.578669 133.142,45.97768 133.142,55.889778 130.11261,65.039444 124.99706,72.410278 L124.05078,73.707825 124.47717,74.961113 C128.69981,87.771332 130.89893,102.22288 130.51228,117.46621 129.20988,168.81218 99.06195,209.69838 63.174983,208.7881 27.288017,207.87784 -0.7483182,165.51578 0.55407715,114.16981 0.94072419,98.926476 3.8696671,84.605011 8.7363245,72.025337 L8.9394581,71.514763 8.6449378,71.110909 C3.5293949,63.740086 0.49999928,54.590416 0.5,44.678318 0.49999928,20.279306 18.855626,0.49999982 41.498439,0.5 z" Height="192.283" RenderTransformOrigin="0.500000003717876,0.216566403939321" Stretch="Fill">
@@ -59,69 +59,70 @@
                     </LinearGradientBrush>
                 </Path.Fill>
             </Path>
+            <Ellipse Fill="#FF393940" HorizontalAlignment="Left" Height="25" Stroke="Black" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5" Canvas.Left="145" Canvas.Top="301">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-22.041"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse Fill="#FF393940" HorizontalAlignment="Left" Height="25" Stroke="Black" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.5,0.5" Canvas.Left="252" Canvas.Top="298">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="24.885"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Rectangle HorizontalAlignment="Left" Height="56" RadiusY="19.5" RadiusX="19.5" Stroke="Black" VerticalAlignment="Top" Width="46" Canvas.Left="175" Canvas.Top="360">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.884,0.158" StartPoint="0.223,0.758">
+                        <GradientStop Color="#FFD8721C" Offset="0"/>
+                        <GradientStop Color="#FFE06914" Offset="1"/>
+                        <GradientStop Color="#FFC36521" Offset="0.935"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="56" RadiusY="19.5" RadiusX="19.5" Stroke="Black" VerticalAlignment="Top" Width="46" Canvas.Left="235" Canvas.Top="359">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.884,0.158" StartPoint="0.223,0.758">
+                        <GradientStop Color="#FFD8721C" Offset="0"/>
+                        <GradientStop Color="#FFE06914" Offset="1"/>
+                        <GradientStop Color="#FFC36521" Offset="0.935"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Ellipse Fill="#7FEA1F1F" HorizontalAlignment="Left" Height="16" Stroke="Black" VerticalAlignment="Top" Width="31" Canvas.Left="175" Canvas.Top="249"/>
+            <Ellipse HorizontalAlignment="Left" Height="33" Stroke="Black" VerticalAlignment="Top" Width="35" Canvas.Left="179" Canvas.Top="224">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFD8721C" Offset="0"/>
+                        <GradientStop Color="#FF080604"/>
+                        <GradientStop Color="#FF020202" Offset="0.935"/>
+                        <GradientStop Color="#FF040302" Offset="0.585"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse Fill="#7FEA1F1F" HorizontalAlignment="Left" Height="16" Stroke="Black" VerticalAlignment="Top" Width="31" Canvas.Left="250" Canvas.Top="248"/>
+            <Ellipse HorizontalAlignment="Left" Height="18" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White" Canvas.Left="191" Canvas.Top="239"/>
+            <Ellipse HorizontalAlignment="Left" Height="33" Stroke="Black" VerticalAlignment="Top" Width="35" Canvas.Left="235" Canvas.Top="224">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFD8721C" Offset="0"/>
+                        <GradientStop Color="#FF080604"/>
+                        <GradientStop Color="#FF020202" Offset="0.935"/>
+                        <GradientStop Color="#FF040302" Offset="0.585"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" Height="18" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White" RenderTransformOrigin="0.5,0.444" Canvas.Left="243" Canvas.Top="239"/>
         </Canvas>
-        <Ellipse Grid.Column="1" Fill="#FF393940" HorizontalAlignment="Left" Height="25" Margin="154.678,41.917,0,0" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="55.219" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-22.041"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Ellipse Grid.Column="1" Fill="#FF393940" HorizontalAlignment="Left" Height="25" Margin="262.193,39.499,0,0" Grid.Row="4" Stroke="Black" VerticalAlignment="Top" Width="52.126" RenderTransformOrigin="0.5,0.5">
-            <Ellipse.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="24.885"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Ellipse.RenderTransform>
-        </Ellipse>
-        <Rectangle HorizontalAlignment="Left" Height="56" Margin="184.523,102,0,0" RadiusY="19.5" Grid.Row="4" RadiusX="19.5" Stroke="Black" VerticalAlignment="Top" Width="46" Grid.Column="1">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.884,0.158" StartPoint="0.223,0.758">
-                    <GradientStop Color="#FFD8721C" Offset="0"/>
-                    <GradientStop Color="#FFE06914" Offset="1"/>
-                    <GradientStop Color="#FFC36521" Offset="0.935"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="56" Margin="247.523,100,0,0" RadiusY="19.5" Grid.Row="4" RadiusX="19.5" Stroke="Black" VerticalAlignment="Top" Width="46" Grid.Column="1">
-            <Rectangle.Fill>
-                <LinearGradientBrush EndPoint="0.884,0.158" StartPoint="0.223,0.758">
-                    <GradientStop Color="#FFD8721C" Offset="0"/>
-                    <GradientStop Color="#FFE06914" Offset="1"/>
-                    <GradientStop Color="#FFC36521" Offset="0.935"/>
-                </LinearGradientBrush>
-            </Rectangle.Fill>
-        </Rectangle>
-        <Ellipse Fill="#7FEA1F1F" HorizontalAlignment="Left" Height="16" Margin="178.523,255,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="31" Grid.Column="1" Grid.RowSpan="2"/>
-        <Ellipse Grid.Column="1" HorizontalAlignment="Left" Height="33" Margin="188.523,230,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="35">
-            <Ellipse.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFD8721C" Offset="0"/>
-                    <GradientStop Color="#FF080604"/>
-                    <GradientStop Color="#FF020202" Offset="0.935"/>
-                    <GradientStop Color="#FF040302" Offset="0.585"/>
-                </RadialGradientBrush>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse Fill="#7FEA1F1F" HorizontalAlignment="Left" Height="16" Margin="260.523,255,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="31" Grid.Column="1" Grid.RowSpan="2"/>
-        <Ellipse Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="200.523,245,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White"/>
-        <Ellipse Grid.Column="1" HorizontalAlignment="Left" Height="33" Margin="246.523,229,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="35">
-            <Ellipse.Fill>
-                <RadialGradientBrush>
-                    <GradientStop Color="#FFD8721C" Offset="0"/>
-                    <GradientStop Color="#FF080604"/>
-                    <GradientStop Color="#FF020202" Offset="0.935"/>
-                    <GradientStop Color="#FF040302" Offset="0.585"/>
-                </RadialGradientBrush>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse Grid.Column="1" HorizontalAlignment="Left" Height="18" Margin="252.523,245,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White" RenderTransformOrigin="0.5,0.444"/>
+        <Image Margin="10,0,63,0" Grid.RowSpan="3" Source="log-tamagochi.png" Stretch="UniformToFill"/>
 
     </Grid>
 </Window>
