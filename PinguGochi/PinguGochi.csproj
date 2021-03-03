@@ -103,5 +103,8 @@
   <ItemGroup>
     <Resource Include="Woodcut art by Oscar Droege.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="descarga.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

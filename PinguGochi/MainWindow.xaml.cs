@@ -105,6 +105,11 @@ public partial class MainWindow : Window
             decremento += 2;
         }
 
+        private void cambiarFondo(object sender, MouseButtonEventArgs e)
+        {
+            this.img_bosqueNevado.Source = ((Image)sender).Source; //asignar fondo generico
+        }
+
         /// metodo para cambair los colores a las barras de progreso segun esten a 15,25,50 y 100
         /* private void Cambio_colores(object sender, EventArgs e)
          {
