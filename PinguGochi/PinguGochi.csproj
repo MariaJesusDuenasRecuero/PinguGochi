@@ -106,5 +106,17 @@
   <ItemGroup>
     <Resource Include="descarga.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="insignia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="exito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="top-three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="coleccionar-monedas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

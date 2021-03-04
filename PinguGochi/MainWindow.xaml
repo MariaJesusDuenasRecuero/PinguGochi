@@ -21,17 +21,16 @@
             <RowDefinition Height="281*"/>
             <RowDefinition Height="54*"/>
         </Grid.RowDefinitions>
-        <Image x:Name="img_bosqueNevado" Grid.ColumnSpan="4" Margin="12.5,9.5,13.5,7.5" Grid.Row="3" Grid.RowSpan="3" Source="Woodcut art by Oscar Droege.png" Stretch="UniformToFill"/>
+        <Image x:Name="img_bosqueNevado" Grid.ColumnSpan="4" Margin="12.5,9.5,13.5,7.5" Grid.Row="3" Grid.RowSpan="3" Source="Woodcut art by Oscar Droege.png" Stretch="UniformToFill" Opacity="0.5"/>
 
         <ProgressBar x:Name="prgBar_Alimento" Grid.Column="1" Margin="10,15,5,5" Value="100"/>
         <ProgressBar x:Name="prgB_Cansancio" Grid.Column="1" Margin="10,16,5,5" Grid.Row="1" Value="100"/>
         <ProgressBar x:Name="prgB_Diversión" Grid.Column="1" Margin="10,10,5,10" Grid.Row="2" Value="100"/>
-        <Button x:Name="btn_Alimentar" Content="Alimentar" Grid.Column="2" Margin="10,12" FontSize="18" FontFamily="Verdana" Click="btn_Alimentar_Click"/>
-        <Button x:Name="btn_Descansar" Content="Descansar" Grid.Column="2" Margin="10,13,10,0" Grid.Row="1" FontSize="18" FontFamily="Verdana" Click="btn_Descansar_Click" VerticalAlignment="Center"/>
-        <Button x:Name="btn_divertir" Content="Jugar" Grid.Column="2" Margin="10,13" Grid.Row="2" FontSize="18" FontFamily="Verdana" Click="btn_divertir_Click"/>
-        <Label x:Name="lbl_GameOver" Content="GAME OVER" Grid.Column="1" Margin="75,233,63,48" Grid.Row="4" FontSize="36" Grid.RowSpan="2" Visibility="Hidden"/>
-        <Label x:Name="lbl_puntuacionJugador" Content="Puntuación:" Grid.Column="1" HorizontalAlignment="Left" Margin="55,24,0,-12" Grid.Row="5" VerticalAlignment="Top" FontSize="24" Visibility="Hidden" Height="42" Width="134"/>
-        <Label x:Name="lbl_tiempoVida" Content="" Grid.Column="1" Margin="202,23,5,10" Grid.Row="5" FontSize="24" Visibility="Hidden"/>
+        <Button x:Name="btn_Alimentar" Content="Alimentar" Grid.Column="2" Margin="10" FontSize="18" FontFamily="Verdana" Click="btn_Alimentar_Click"/>
+        <Button x:Name="btn_Descansar" Content="Descansar" Grid.Column="2" Margin="10" Grid.Row="1" FontSize="18" FontFamily="Verdana" Click="btn_Descansar_Click" VerticalAlignment="Center" Height="31.876"/>
+        <Button x:Name="btn_divertir" Content="Jugar" Grid.Column="2" Margin="10" Grid.Row="2" FontSize="18" FontFamily="Verdana" Click="btn_divertir_Click"/>
+        <Label x:Name="lbl_puntuacionJugador" Content="Puntuación:" Grid.Column="1" HorizontalAlignment="Left" Margin="100,276.5,0,0" Grid.Row="4" VerticalAlignment="Top" FontSize="24" Height="42" Width="174.5" FontFamily="Verdana" Grid.RowSpan="2" Visibility="Hidden"/>
+        <Label x:Name="lbl_tiempoVida" Content="" Grid.Column="1" Margin="269.5,278.5,43.759,4" Grid.Row="4" FontSize="24" Grid.ColumnSpan="2" Grid.RowSpan="2" FontFamily="Verdana"/>
         <Canvas Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" Height="526" Margin="10" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Center" Width="465" Background="#7F64CFE0">
             <Path Data="M84.499999,0.5 C130.33963,0.5 167.5,35.869503 167.5,79.5 167.5,93.816254 163.49908,107.24308 156.50345,118.8228 L155.5806,120.30856 156.48234,121.84391 C162.87106,133.03767 166.5,145.86548 166.5,159.5 166.5,203.13049 129.33963,238.5 83.499999,238.5 37.660365,238.5 0.49999857,203.13049 0.5,159.5 0.49999857,145.18375 4.5009072,131.75691 11.496548,120.1772 L12.419404,118.69144 11.51765,117.15609 C5.1289406,105.96232 1.4999986,93.134529 1.4999999,79.5 1.4999986,35.869503 38.660365,0.5 84.499999,0.5 z" Fill="#FF393940" Height="239" Canvas.Left="142.5" Stretch="Fill" Stroke="Black" Canvas.Top="158" Width="168"/>
             <Path Fill="White" Canvas.Left="159.586" Stroke="Black" Canvas.Top="200.673" Width="133.642" Data="M41.498439,0.5 C51.40467,0.49999982 60.490306,4.2858829 67.577255,10.588179 L67.587692,10.597925 67.613548,10.57603 C74.453834,5.0637207 82.944923,1.7993622 92.143569,1.7993629 114.78638,1.7993622 133.142,21.578669 133.142,45.97768 133.142,55.889778 130.11261,65.039444 124.99706,72.410278 L124.05078,73.707825 124.47717,74.961113 C128.69981,87.771332 130.89893,102.22288 130.51228,117.46621 129.20988,168.81218 99.06195,209.69838 63.174983,208.7881 27.288017,207.87784 -0.7483182,165.51578 0.55407715,114.16981 0.94072419,98.926476 3.8696671,84.605011 8.7363245,72.025337 L8.9394581,71.514763 8.6449378,71.110909 C3.5293949,63.740086 0.49999928,54.590416 0.5,44.678318 0.49999928,20.279306 18.855626,0.49999982 41.498439,0.5 z" Height="192.283" RenderTransformOrigin="0.500000003717876,0.216566403939321" Stretch="Fill">
@@ -124,13 +123,22 @@
             </Ellipse>
             <Ellipse HorizontalAlignment="Left" Height="18" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White" RenderTransformOrigin="0.5,0.444" Canvas.Left="243" Canvas.Top="239"/>
         </Canvas>
-        <Image Margin="10,10,63,0" Grid.RowSpan="3" Source="log-tamagochi.png" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" MinHeight="100"/>
+        <Image Margin="47.5,19.692,70.5,18.692" Grid.RowSpan="3" Source="log-tamagochi.png" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" MinHeight="100" Height="130.616" Width="147.477"/>
         <WrapPanel Margin="10,70,10,10" Grid.Row="4" Background="#7FB2E7F0"/>
         <WrapPanel Margin="10,65,10,10" Grid.Row="3" Background="#7FB2E7F0" Grid.Column="3">
             <Image Height="115.5" Width="133.5" Margin="10" Source="descarga.jpg" MouseUp="cambiarFondo"/>
         </WrapPanel>
         <StackPanel Margin="10,65,10,0" Grid.Row="3" Background="#7FD9F3F8"/>
         <StackPanel Margin="10,81,11,0" Grid.Row="4" Background="#7FD9F3F8" Grid.Column="3"/>
+        <Label x:Name="lbl_GameOver" Content="GAME OVER" Grid.Column="1" Margin="94.5,225.5,107.759,1.5" Grid.Row="4" FontSize="36" FontFamily="MineCrafter 3" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Label Content="Logros" HorizontalAlignment="Left" Margin="28,26,0,0" Grid.Row="3" VerticalAlignment="Top" Width="105" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
+        <Label Content="Premios" HorizontalAlignment="Left" Margin="28,26,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
+        <Label Content="Ranking" HorizontalAlignment="Left" Margin="10,26,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
+        <Label Content="Coleccionables" HorizontalAlignment="Left" Margin="3,20,0,0" Grid.Row="3" VerticalAlignment="Top" Width="211" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="195,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="61" Source="insignia.png"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="195,16,0,0" Grid.Row="4" VerticalAlignment="Top" Width="61" Source="exito.png"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="194,16,0,0" Grid.Row="4" VerticalAlignment="Top" Width="61" Source="top-three.png" Grid.Column="3"/>
+        <Image HorizontalAlignment="Left" Height="48" Margin="194,9,0,0" Grid.Row="3" VerticalAlignment="Top" Width="48" Source="coleccionar-monedas.png" Grid.Column="3"/>
 
     </Grid>
 </Window>
