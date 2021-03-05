@@ -122,6 +122,38 @@
                 </Ellipse.Fill>
             </Ellipse>
             <Ellipse HorizontalAlignment="Left" Height="18" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White" RenderTransformOrigin="0.5,0.444" Canvas.Left="243" Canvas.Top="239"/>
+            <Path Canvas.Left="149.5" Stroke="Black" Canvas.Top="141" Width="156" Data="M71.500001,0.5 C110.71222,0.5 142.5,34.302502 142.5,76 142.5,78.606094 142.37582,81.181351 142.13344,83.719437 L141.99577,85 141.92957,84.384064 C137.48784,47.227177 107.64877,18.5 71.500001,18.5 35.351239,18.5 5.5121571,47.227177 1.0704343,84.384064 L1.0042229,85 0.8665657,83.719437 C0.62417161,81.181351 0.5000006,78.606094 0.5,76 0.5000006,34.302502 32.287785,0.5 71.500001,0.5 z" Height="85.5" Stretch="Fill">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB92020" Offset="0"/>
+                        <GradientStop Color="#FF971616" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Ellipse Height="43" Canvas.Left="298.5" Stroke="Black" Canvas.Top="199" Width="23">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB92020" Offset="0"/>
+                        <GradientStop Color="#FF971616" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse Height="43" Canvas.Left="131.5" Stroke="Black" Canvas.Top="202" Width="23">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB92020" Offset="0"/>
+                        <GradientStop Color="#FF971616" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Path Data="M175.5,379" Height="1" Canvas.Left="175.5" Stretch="Fill" Stroke="Black" Canvas.Top="379" Width="1">
+                <Path.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFB92020" Offset="0"/>
+                        <GradientStop Color="#FF971616" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
         </Canvas>
         <Image Margin="47.5,19.692,70.5,18.692" Grid.RowSpan="3" Source="log-tamagochi.png" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" MinHeight="100" Height="130.616" Width="147.477"/>
         <WrapPanel Margin="10,70,10,10" Grid.Row="4" Background="#7FB2E7F0"/>
@@ -135,10 +167,11 @@
         <Label Content="Premios" HorizontalAlignment="Left" Margin="28,26,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
         <Label Content="Ranking" HorizontalAlignment="Left" Margin="10,26,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
         <Label Content="Coleccionables" HorizontalAlignment="Left" Margin="3,20,0,0" Grid.Row="3" VerticalAlignment="Top" Width="211" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
-        <Image HorizontalAlignment="Left" Height="56" Margin="195,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="61" Source="insignia.png"/>
-        <Image HorizontalAlignment="Left" Height="56" Margin="195,16,0,0" Grid.Row="4" VerticalAlignment="Top" Width="61" Source="exito.png"/>
-        <Image HorizontalAlignment="Left" Height="56" Margin="194,16,0,0" Grid.Row="4" VerticalAlignment="Top" Width="61" Source="top-three.png" Grid.Column="3"/>
-        <Image HorizontalAlignment="Left" Height="48" Margin="194,9,0,0" Grid.Row="3" VerticalAlignment="Top" Width="48" Source="coleccionar-monedas.png" Grid.Column="3"/>
+        <Image Height="56" Margin="195,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="61" Source="insignia.png"/>
+        <Image Height="56" Margin="195,16,0,0" Grid.Row="4" VerticalAlignment="Top" Width="61" Source="exito.png"/>
+        <Image Height="56" Margin="196.238,23,8.238,0" Grid.Row="4" VerticalAlignment="Top" Width="61" Source="top-three.png" Grid.Column="3"/>
+        <Image Height="48" Margin="199.738,9,17.738,0" Grid.Row="3" VerticalAlignment="Top" Width="48" Source="coleccionar-monedas.png" Grid.Column="3"/>
+        <Ellipse Grid.Column="1" Fill="#FF080707" HorizontalAlignment="Left" Height="8" Margin="26.523,87,0,0" Grid.Row="3" Stroke="Black" VerticalAlignment="Top" Width="9"/>
 
     </Grid>
 </Window>
