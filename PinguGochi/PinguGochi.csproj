@@ -118,5 +118,20 @@
   <ItemGroup>
     <Resource Include="coleccionar-monedas.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tumba %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="craneo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="muerte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tenedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="noche.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

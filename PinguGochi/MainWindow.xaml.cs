@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +13,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -25,7 +27,7 @@ public partial class MainWindow : Window
     {
         DispatcherTimer t1;
         int tiempo_vida = 0;
-        double decremento = 10.0;
+        double decremento = 5.0;
 
 
         //public object TimeMeasure { get; private set; }
@@ -70,6 +72,8 @@ public partial class MainWindow : Window
 
                 t1.Stop();
                 this.lbl_GameOver.Visibility = Visibility.Visible;
+                this.tumba.Visibility = Visibility.Visible;
+                this.muerte.Visibility = Visibility.Visible;
                 this.lbl_tiempoVida.Visibility = Visibility.Visible;
                 this.lbl_puntuacionJugador.Visibility = Visibility.Visible;
 
@@ -91,13 +95,87 @@ public partial class MainWindow : Window
         {
             this.prgBar_Alimento.Value += 5;
             decremento += 2;
+
+            btn_Alimentar.IsEnabled = false;
+            comerLogo.Visibility = Visibility.Visible;
+
+            DoubleAnimation comer = new DoubleAnimation();
+            comer.From = 15;
+            comer.Duration = new Duration(TimeSpan.FromSeconds(0.5));
+            comer.AutoReverse = true;
+            comer.Completed += new EventHandler(finComer);
+
+            pico.BeginAnimation(Ellipse.HeightProperty, comer);
+
+            DoubleAnimation comerBracitoMoviendo = new DoubleAnimation();
+            comerBracitoMoviendo.From = 20;
+            comerBracitoMoviendo.Duration = new Duration(TimeSpan.FromSeconds(1));
+            comerBracitoMoviendo.AutoReverse = true;
+            comerBracitoMoviendo.Completed += new EventHandler(finComer);
+
+            onomatopeyaComiendo.Visibility = Visibility.Visible;
+
+            brazoDerecha.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
+            brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
+
+
         }
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
         {
             this.prgB_Cansancio.Value += 5;
             decremento += 2;
+
+
+            btn_Descansar.IsEnabled = false;
+
+            DoubleAnimation cerrarOjoDerecho = new DoubleAnimation();
+            cerrarOjoDerecho.To = 5;
+            cerrarOjoDerecho.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cerrarOjoDerecho.AutoReverse = true;
+            cerrarOjoDerecho.Completed += new EventHandler(finCerrarOjoDer);
+
+            DoubleAnimation cerrarOjoIzquierdo = new DoubleAnimation();
+            cerrarOjoIzquierdo.To = 5;
+            cerrarOjoIzquierdo.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cerrarOjoIzquierdo.AutoReverse = true;
+
+            DoubleAnimation cerrarPupila = new DoubleAnimation();
+            cerrarPupila.To = 3;
+            cerrarPupila.Duration = new Duration(TimeSpan.FromSeconds(1));
+            cerrarPupila.AutoReverse = true;
+            cerrarPupila.Completed += new EventHandler(finCerrarOjoDer);
+            dormirLogo.Visibility = Visibility.Visible;
+
+
+            FondoOjoDerecho.BeginAnimation(Ellipse.HeightProperty, cerrarOjoDerecho);
+            FondoOjoIzquierdo.BeginAnimation(Ellipse.HeightProperty, cerrarOjoIzquierdo);
+
+
+            pupilaDerecha.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
+            pupilaIzquierda.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
+
+
         }
+
+        private void finCerrarOjoDer(object sender , EventArgs e)
+        {
+            btn_Descansar.IsEnabled = true;
+            dormirLogo.Visibility = Visibility.Hidden;
+        }
+
+        private void finComer(object sender, EventArgs e)
+        {
+            btn_Alimentar.IsEnabled = true;
+            onomatopeyaComiendo.Visibility = Visibility.Hidden;
+            comerLogo.Visibility = Visibility.Hidden;
+        }
+
+
+
+
+
+
 
         private void btn_divertir_Click(object sender, RoutedEventArgs e)
         {
@@ -111,18 +189,19 @@ public partial class MainWindow : Window
         }
 
         /// metodo para cambair los colores a las barras de progreso segun esten a 15,25,50 y 100
-        /* private void Cambio_colores(object sender, EventArgs e)
+        private void Cambio_colores(object sender, EventArgs e)
          {
-             if (prgBar_Alimento.Value  == 50)
-             {
-                 //prgBar_Alimento.Foreground.
+             if (prgBar_Alimento.Value  == 50 || prgB_Cansancio.Value == 50 || prgB_Diversión.Value == 50)
+            {
 
-             }
-         }*/
-        /// <summary>
-        /// instalar las 3 barras y calcular el tiempo que se juega : varieble q suma 
-        /// </summary>
+                // prgBar_Alimento.Foreground = Brushes.Orange;
 
+                
+
+            }
+         }
+
+        
 
 
 
@@ -132,3 +211,4 @@ public partial class MainWindow : Window
 
     }
 }
+
