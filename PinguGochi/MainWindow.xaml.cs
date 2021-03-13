@@ -118,6 +118,8 @@ public partial class MainWindow : Window
 
             brazoDerecha.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
+            pez.Visibility = Visibility.Visible;
+                ;
 
 
         }
@@ -143,6 +145,9 @@ public partial class MainWindow : Window
             orejasOso.Visibility = Visibility.Visible;
             miniOrejasOso.Visibility = Visibility.Visible;
             pataIzqOso.Visibility = Visibility.Visible;
+            gorroDormir.Visibility = Visibility.Visible;
+            cascoAuricular.Visibility = Visibility.Hidden;
+            auricularesLados.Visibility = Visibility.Hidden;
 
             DoubleAnimation cerrarOjoDerecho = new DoubleAnimation();
             cerrarOjoDerecho.To = 5;
@@ -190,6 +195,10 @@ public partial class MainWindow : Window
             orejasOso.Visibility = Visibility.Hidden;
             miniOrejasOso.Visibility = Visibility.Hidden;
             pataIzqOso.Visibility = Visibility.Hidden;
+
+            gorroDormir.Visibility = Visibility.Hidden;
+            cascoAuricular.Visibility = Visibility.Visible;
+            auricularesLados.Visibility = Visibility.Visible;
         }
 
         private void finComer(object sender, EventArgs e)
@@ -197,6 +206,7 @@ public partial class MainWindow : Window
             btn_Alimentar.IsEnabled = true;
             onomatopeyaComiendo.Visibility = Visibility.Hidden;
             comerLogo.Visibility = Visibility.Hidden;
+            pez.Visibility = Visibility.Hidden;
            
         }
 

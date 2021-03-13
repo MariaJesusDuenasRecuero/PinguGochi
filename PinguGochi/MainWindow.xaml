@@ -311,7 +311,7 @@
                 </Ellipse.Fill>
             </Ellipse>
             <Ellipse x:Name="pupilaDerecha" HorizontalAlignment="Left" Height="18" Stroke="Black" VerticalAlignment="Top" Width="16" Fill="White" RenderTransformOrigin="0.5,0.444" Canvas.Left="243" Canvas.Top="225"/>
-            <Path Canvas.Left="149.5" Stroke="Black" Canvas.Top="141" Width="156" Data="M71.500001,0.5 C110.71222,0.5 142.5,34.302502 142.5,76 142.5,78.606094 142.37582,81.181351 142.13344,83.719437 L141.99577,85 141.92957,84.384064 C137.48784,47.227177 107.64877,18.5 71.500001,18.5 35.351239,18.5 5.5121571,47.227177 1.0704343,84.384064 L1.0042229,85 0.8665657,83.719437 C0.62417161,81.181351 0.5000006,78.606094 0.5,76 0.5000006,34.302502 32.287785,0.5 71.500001,0.5 z" Height="85.5" Stretch="Fill">
+            <Path x:Name="cascoAuricular" Canvas.Left="149.5" Stroke="Black" Canvas.Top="141" Width="156" Data="M71.500001,0.5 C110.71222,0.5 142.5,34.302502 142.5,76 142.5,78.606094 142.37582,81.181351 142.13344,83.719437 L141.99577,85 141.92957,84.384064 C137.48784,47.227177 107.64877,18.5 71.500001,18.5 35.351239,18.5 5.5121571,47.227177 1.0704343,84.384064 L1.0042229,85 0.8665657,83.719437 C0.62417161,81.181351 0.5000006,78.606094 0.5,76 0.5000006,34.302502 32.287785,0.5 71.500001,0.5 z" Height="85.5" Stretch="Fill">
                 <Path.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFB92020" Offset="0"/>
@@ -319,22 +319,14 @@
                     </LinearGradientBrush>
                 </Path.Fill>
             </Path>
-            <Ellipse Height="43" Canvas.Left="298.5" Stroke="Black" Canvas.Top="199" Width="23">
-                <Ellipse.Fill>
+            <Path x:Name="auricularesLados" Stroke="Black" Canvas.Top="199" Data="M11.5,3.4999999 C17.575134,3.4999987 22.5,12.902019 22.5,24.499999 22.5,36.097979 17.575134,45.499999 11.5,45.499999 5.4248657,45.499999 0.5,36.097979 0.5,24.499999 0.5,12.902019 5.4248657,3.4999987 11.5,3.4999999 z M178.5,0.5 C184.57513,0.49999869 189.5,9.9020191 189.5,21.499999 189.5,33.097979 184.57513,42.499999 178.5,42.499999 172.42487,42.499999 167.5,33.097979 167.5,21.499999 167.5,9.9020191 172.42487,0.49999869 178.5,0.5 z" Height="46" Canvas.Left="131.5" Stretch="Fill" Width="190">
+                <Path.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FFB92020" Offset="0"/>
                         <GradientStop Color="#FF971616" Offset="1"/>
                     </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
-            <Ellipse Height="43" Canvas.Left="131.5" Stroke="Black" Canvas.Top="202" Width="23">
-                <Ellipse.Fill>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FFB92020" Offset="0"/>
-                        <GradientStop Color="#FF971616" Offset="1"/>
-                    </LinearGradientBrush>
-                </Ellipse.Fill>
-            </Ellipse>
+                </Path.Fill>
+            </Path>
             <Path Data="M175.5,379" Height="1" Canvas.Left="175.5" Stretch="Fill" Stroke="Black" Canvas.Top="379" Width="1">
                 <Path.Fill>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -482,6 +474,26 @@
                 </Ellipse.RenderTransform>
             </Ellipse>
             <Path Data="M7.375,0.74999997 C8.1343918,0.75000003 8.75,1.3096441 8.75,2 8.75,2.690356 8.1343918,3.25 7.375,3.25 6.6156087,3.25 6,2.690356 6,2 6,1.3096441 6.6156087,0.75000003 7.375,0.74999997 z M1.875,0.5 C2.6343915,0.50000003 3.25,1.0596441 3.25,1.75 3.25,2.440356 2.6343915,3 1.875,3 1.1156085,3 0.5,2.440356 0.5,1.75 0.5,1.0596441 1.1156085,0.50000003 1.875,0.5 z" Fill="#FF17140F" Height="3.25" Canvas.Left="220.75" Stretch="Fill" Stroke="Black" Canvas.Top="258" Width="8"/>
+            <Image x:Name="gorroDormir" Height="283.321" Canvas.Left="137.803" Canvas.Top="76.863" Width="301.959" Source="0_1340b2_7b3804a3_L.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-31.849"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Path x:Name="pez" Data="M24,0.5 C33.93681,0.50000051 42.433147,6.7986194 45.869961,15.699804 L45.984669,16.007952 46.073906,15.947734 C47.510277,15.029039 49.196445,14.5 51,14.5 51.655838,14.5 52.296154,14.569956 52.914581,14.703164 L52.955662,14.713144 53.395466,13.814395 C56.903206,7.0311495 63.251251,2.5000004 70.499985,2.5000001 73.951759,2.5000006 77.199295,3.5274719 80.033165,5.3363234 L80.086998,5.371688 80.024727,5.3914882 C71.640762,8.189294 65.499985,17.252022 65.499985,28 65.499985,36.720059 69.542099,44.330815 75.544838,48.386521 L75.912949,48.628311 75.498291,48.760159 C73.900696,49.243134 72.225868,49.5 70.499985,49.5 62.215717,49.5 55.107861,43.581764 52.071697,35.147259 L51.840687,34.458828 51.488869,34.486988 C51.32695,34.495629 51.16396,34.5 51,34.5 49.196445,34.5 47.510277,33.970963 46.073906,33.052265 L45.984669,32.992047 45.869961,33.300194 C42.433147,42.201382 33.93681,48.5 24,48.5 11.021308,48.5 0.5,37.754833 0.5,24.5 0.5,11.245166 11.021308,0.50000051 24,0.5 z" Fill="#FF4C8495" Height="31.305" Canvas.Left="196.079" Stretch="Fill" Stroke="Black" Canvas.Top="311.8" Width="65.107" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.907" ScaleX="1.102"/>
+                        <SkewTransform AngleY="0.009"/>
+                        <RotateTransform Angle="87.838"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
         </Canvas>
         <Image Margin="17.5,-21.308,13.5,1.692" Grid.RowSpan="3" Source="log-tamagochi.png" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" MinHeight="100" Height="188.616" Width="234.477"/>
         <WrapPanel Margin="10,70,10,10" Grid.Row="4" Background="#7FB2E7F0"/>
