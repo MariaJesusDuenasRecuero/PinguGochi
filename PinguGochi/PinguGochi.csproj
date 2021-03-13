@@ -133,5 +133,8 @@
   <ItemGroup>
     <Resource Include="noche.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="png-transparent-nightcap-bonnet-hat-hat-blue-hat-fashion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

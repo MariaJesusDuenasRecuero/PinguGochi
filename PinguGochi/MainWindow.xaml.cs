@@ -19,6 +19,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
+
 namespace PinguGochi { 
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
@@ -129,6 +130,20 @@ public partial class MainWindow : Window
 
             btn_Descansar.IsEnabled = false;
 
+            pataDerechaOso.Visibility = Visibility.Visible;
+            cuerpoOso.Visibility = Visibility.Visible;
+            manoIzqOso.Visibility = Visibility.Visible;
+            barrigaOso.Visibility = Visibility.Visible;
+            ocicoOso.Visibility = Visibility.Visible;
+            narizOso.Visibility = Visibility.Visible;
+            pupilaDechOso.Visibility = Visibility.Visible;
+            PupilaIzqOso.Visibility = Visibility.Visible;
+            ojoDechOso.Visibility = Visibility.Visible;
+            ojoIzqOso.Visibility = Visibility.Visible;
+            orejasOso.Visibility = Visibility.Visible;
+            miniOrejasOso.Visibility = Visibility.Visible;
+            pataIzqOso.Visibility = Visibility.Visible;
+
             DoubleAnimation cerrarOjoDerecho = new DoubleAnimation();
             cerrarOjoDerecho.To = 5;
             cerrarOjoDerecho.Duration = new Duration(TimeSpan.FromSeconds(1));
@@ -162,6 +177,19 @@ public partial class MainWindow : Window
         {
             btn_Descansar.IsEnabled = true;
             dormirLogo.Visibility = Visibility.Hidden;
+            pataDerechaOso.Visibility = Visibility.Hidden;
+            cuerpoOso.Visibility = Visibility.Hidden;
+            manoIzqOso.Visibility = Visibility.Hidden;
+            barrigaOso.Visibility = Visibility.Hidden;
+            ocicoOso.Visibility = Visibility.Hidden;
+            narizOso.Visibility = Visibility.Hidden;
+            pupilaDechOso.Visibility = Visibility.Hidden;
+            PupilaIzqOso.Visibility = Visibility.Hidden;
+            ojoDechOso.Visibility = Visibility.Hidden;
+            ojoIzqOso.Visibility = Visibility.Hidden;
+            orejasOso.Visibility = Visibility.Hidden;
+            miniOrejasOso.Visibility = Visibility.Hidden;
+            pataIzqOso.Visibility = Visibility.Hidden;
         }
 
         private void finComer(object sender, EventArgs e)
@@ -169,6 +197,7 @@ public partial class MainWindow : Window
             btn_Alimentar.IsEnabled = true;
             onomatopeyaComiendo.Visibility = Visibility.Hidden;
             comerLogo.Visibility = Visibility.Hidden;
+           
         }
 
 
@@ -188,25 +217,28 @@ public partial class MainWindow : Window
             this.img_bosqueNevado.Source = ((Image)sender).Source; //asignar fondo generico
         }
 
+
+        Color BarColorRojo = Color.FromArgb(246,25,1,96);
         /// metodo para cambair los colores a las barras de progreso segun esten a 15,25,50 y 100
         private void Cambio_colores(object sender, EventArgs e)
          {
              if (prgBar_Alimento.Value  == 50 || prgB_Cansancio.Value == 50 || prgB_Diversión.Value == 50)
             {
 
-                // prgBar_Alimento.Foreground = Brushes.Orange;
-
                 
+
+            }
+            else if (prgBar_Alimento.Value == 25 || prgB_Cansancio.Value == 25 || prgB_Diversión.Value == 25)
+            {
 
             }
          }
 
+
+
         
 
-
-
-
-
+       
 
 
     }
