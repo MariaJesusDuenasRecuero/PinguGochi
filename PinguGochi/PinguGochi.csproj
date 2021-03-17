@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Ventana_Bienvenda.xaml.cs">
+      <DependentUpon>Ventana_Bienvenda.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +70,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Ventana_Bienvenda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -138,6 +145,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="0_1340b2_7b3804a3_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="5c1fa78a0dce6-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mascarilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mascarilla-medica.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

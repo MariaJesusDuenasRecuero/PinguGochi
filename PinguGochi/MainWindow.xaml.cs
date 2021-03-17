@@ -29,6 +29,7 @@ public partial class MainWindow : Window
         DispatcherTimer t1;
         int tiempo_vida = 0;
         double decremento = 5.0;
+        String nombre;
 
 
         //public object TimeMeasure { get; private set; }
@@ -36,6 +37,11 @@ public partial class MainWindow : Window
         public MainWindow()
         {
             InitializeComponent();
+            Ventana_Bienvenda pantalla_Inicio = new Ventana_Bienvenda(this);
+            pantalla_Inicio.ShowDialog();
+
+
+
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromMilliseconds(1000.0);
             t1.Tick += new EventHandler(reloj);
@@ -244,13 +250,46 @@ public partial class MainWindow : Window
             }
          }
 
+        private void acerca_de(object sender, MouseButtonEventArgs e)
+        {
+           MessageBoxResult resultadoAcercaDe= MessageBox.Show("Programa realizado por: \n \n María Jesús Dueñas \n \n ¿Desea salir? ","Acerca de",MessageBoxButton.YesNo);
 
+            switch (resultadoAcercaDe)
+            {
+                case MessageBoxResult.Yes:
+                    this.Close(); //el this es de la ventana no del mensaje.
+                    break;
+            }
+        }
+         public void setNombre(string nombre)
+        {
+            this.nombre = nombre;
+            tbMensaje.Text = "Bienvenido/a " + nombre;
+            
 
-        
+        }
 
-       
+        private void arrastrarMascarilla(object sender, MouseButtonEventArgs e)
+        {
+            DataObject data0 = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
+            mascarilla.Visibility = Visibility.Visible;
+        }
 
+        private void colocarColeccionable(object sender, DragEventArgs e)
+            
+        {
+            Image aux = (Image)e.Data.GetData(typeof(Image));
+
+            switch (aux.Name)
+            {
+                case "miniMascarillaPingu":
+                    miniMascarilla.Visibility = Visibility.Visible;
+                        break;
+
+            }
+        }
     }
 }
 

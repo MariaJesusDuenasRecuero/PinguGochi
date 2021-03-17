@@ -1,0 +1,20 @@
+﻿<Window x:Class="PinguGochi.Ventana_Bienvenda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PinguGochi"
+        mc:Ignorable="d"
+        Title="Ventana_Bienvenda" Height="323" Width="538" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid Margin="1,0,-1,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Height="294" Width="551" Source="5c1fa78a0dce6-wallpaper-preview.jpg" Margin="-10,0,-9,0" VerticalAlignment="Center" HorizontalAlignment="Center" Opacity="0.5"/>
+        <Label x:Name="lbl_titulo" Content="BIENVENID@" HorizontalAlignment="Left" Margin="131,41,0,0" VerticalAlignment="Top" Height="69" Width="274" FontSize="36" FontFamily="Verdana"/>
+        <Button x:Name="btn_aceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="411,226,0,0" VerticalAlignment="Top" Width="83" Height="32" Click="btn_aceptar_Click" FontSize="16" FontFamily="Verdana"/>
+        <Label x:Name="lbl_nombrePingu" Content="Bautice a su pingügochi:" HorizontalAlignment="Left" Margin="131,110,0,0" VerticalAlignment="Top" Height="34" Width="246" FontSize="16" FontFamily="Verdana" FontWeight="Bold"/>
+        <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="23" Margin="154,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Verdana"/>
+
+    </Grid>
+</Window>
