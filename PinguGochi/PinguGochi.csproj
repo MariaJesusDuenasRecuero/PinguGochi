@@ -155,5 +155,11 @@
   <ItemGroup>
     <Resource Include="mascarilla-medica.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3cc5a5f1ae3e842ba4de75409f974749.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mierda.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

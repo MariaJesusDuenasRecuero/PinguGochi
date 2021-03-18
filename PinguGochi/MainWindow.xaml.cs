@@ -20,11 +20,11 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 
 
-namespace PinguGochi { 
+namespace PinguGochi {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
-public partial class MainWindow : Window
+    public partial class MainWindow : Window
     {
         DispatcherTimer t1;
         int tiempo_vida = 0;
@@ -40,23 +40,27 @@ public partial class MainWindow : Window
             Ventana_Bienvenda pantalla_Inicio = new Ventana_Bienvenda(this);
             pantalla_Inicio.ShowDialog();
 
-
+            if (prgBar_Alimento.Value % 10 == 0 || (prgBar_Alimento.Value % 5 == 0))
+            {
+                im_caca.Visibility = Visibility.Visible;
+            }
 
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromMilliseconds(1000.0);
             t1.Tick += new EventHandler(reloj);
             t1.Start();
 
+          
 
 
 
         }
 
-        private void puntuacionTiempoVida(object sender, EventArgs e)
+    private void puntuacionTiempoVida(object sender, EventArgs e)
         {
             if (prgBar_Alimento.Value < 100 || prgB_Cansancio.Value < 100 || prgB_Diversión.Value < 100)
             {
-
+             
                 tiempo_vida++;
 
 
@@ -66,9 +70,12 @@ public partial class MainWindow : Window
         /// <summary>
         /// crear evento
         /// </summary>
+      
         private void reloj(object sender, EventArgs e)
         {
+           
             puntuacionTiempoVida(sender, e);
+           
             this.prgBar_Alimento.Value -= decremento;
             this.prgB_Cansancio.Value -= decremento;
             this.prgB_Diversión.Value -= decremento;
@@ -97,7 +104,11 @@ public partial class MainWindow : Window
 
             }
         }
-
+        /// <summary>
+        /// Animaciones que se desarrollan con la interaccion de los botones
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_Alimentar_Click(object sender, RoutedEventArgs e)
         {
             this.prgBar_Alimento.Value += 5;
@@ -125,9 +136,6 @@ public partial class MainWindow : Window
             brazoDerecha.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             pez.Visibility = Visibility.Visible;
-                ;
-
-
         }
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
@@ -184,7 +192,25 @@ public partial class MainWindow : Window
 
         }
 
-        private void finCerrarOjoDer(object sender , EventArgs e)
+        private void btn_divertir_Click(object sender, RoutedEventArgs e)
+        {
+            this.prgB_Diversión.Value += 5;
+            decremento += 2;
+
+            Storyboard sbmusica = (Storyboard)this.Resources["animacionJugar"];
+            sbmusica.Begin();
+        }
+
+
+
+        /// <summary>
+        /// Fin de animaciones
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+
+        private void finCerrarOjoDer(object sender, EventArgs e)
         {
             btn_Descansar.IsEnabled = true;
             dormirLogo.Visibility = Visibility.Hidden;
@@ -213,20 +239,34 @@ public partial class MainWindow : Window
             onomatopeyaComiendo.Visibility = Visibility.Hidden;
             comerLogo.Visibility = Visibility.Hidden;
             pez.Visibility = Visibility.Hidden;
-           
+
         }
 
-
-
-
-
-
-
-        private void btn_divertir_Click(object sender, RoutedEventArgs e)
+        private void limpiarCaca(object sender, MouseButtonEventArgs e)
         {
-            this.prgB_Diversión.Value += 5;
-            decremento += 2;
+            im_caca.Visibility = Visibility.Hidden;
         }
+
+        /// <summary>
+        /// animaciones con el tiempo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        //cagar(sender, e);
+        private void cagar(object sender, EventArgs e)
+        {
+            
+        }
+
+
+
+      
+       /// <summary>
+       /// Cambiar fondo
+       /// </summary>
+       /// <param name="sender"></param>
+       /// <param name="e"></param>
 
         private void cambiarFondo(object sender, MouseButtonEventArgs e)
         {
@@ -234,22 +274,70 @@ public partial class MainWindow : Window
         }
 
 
-        Color BarColorRojo = Color.FromArgb(246,25,1,96);
-        /// metodo para cambair los colores a las barras de progreso segun esten a 15,25,50 y 100
+        private void arrastrarMascarilla(object sender, MouseButtonEventArgs e)
+        {
+            DataObject data0 = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
+
+            mascarilla.Visibility = Visibility.Visible;
+        }
+
+        private void colocarColeccionable(object sender, DragEventArgs e)
+
+        {
+            Image aux = (Image)e.Data.GetData(typeof(Image));
+
+            switch (aux.Name)
+            {
+                case "miniMascarillaPingu":
+                    miniMascarilla.Visibility = Visibility.Visible;
+                    break;
+
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// Metodo para cambiar de color las barras de progreso
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Cambio_colores(object sender, EventArgs e)
-         {
-             if (prgBar_Alimento.Value  == 50 || prgB_Cansancio.Value == 50 || prgB_Diversión.Value == 50)
+        {
+          
+            if (prgBar_Alimento.Value == 50 || prgB_Cansancio.Value == 50 || prgB_Diversión.Value == 50)
             {
 
-                
+                prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Yellow);
+                prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Yellow);
+                prgB_Diversión.Foreground = new SolidColorBrush(Colors.Yellow);
+
 
             }
             else if (prgBar_Alimento.Value == 25 || prgB_Cansancio.Value == 25 || prgB_Diversión.Value == 25)
             {
-
+                prgBar_Alimento.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                prgB_Cansancio.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                prgB_Diversión.Foreground = new SolidColorBrush(Colors.OrangeRed);
             }
-         }
+            else if (prgBar_Alimento.Value == 5 || prgB_Cansancio.Value == 25 || prgB_Diversión.Value == 5)
+            {
+                prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Red);
+                prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Red);
+                prgB_Diversión.Foreground = new SolidColorBrush(Colors.Red);
+            }
+        }
 
+
+
+
+        /// <summary>
+        /// Metodos de interaccion con el usuario.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void acerca_de(object sender, MouseButtonEventArgs e)
         {
            MessageBoxResult resultadoAcercaDe= MessageBox.Show("Programa realizado por: \n \n María Jesús Dueñas \n \n ¿Desea salir? ","Acerca de",MessageBoxButton.YesNo);
@@ -269,27 +357,8 @@ public partial class MainWindow : Window
 
         }
 
-        private void arrastrarMascarilla(object sender, MouseButtonEventArgs e)
-        {
-            DataObject data0 = new DataObject(((Image)sender));
-            DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
-
-            mascarilla.Visibility = Visibility.Visible;
-        }
-
-        private void colocarColeccionable(object sender, DragEventArgs e)
-            
-        {
-            Image aux = (Image)e.Data.GetData(typeof(Image));
-
-            switch (aux.Name)
-            {
-                case "miniMascarillaPingu":
-                    miniMascarilla.Visibility = Visibility.Visible;
-                        break;
-
-            }
-        }
+        
+        
     }
 }
 
