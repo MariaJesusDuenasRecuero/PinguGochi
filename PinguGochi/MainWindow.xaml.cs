@@ -40,10 +40,7 @@ namespace PinguGochi {
             Ventana_Bienvenda pantalla_Inicio = new Ventana_Bienvenda(this);
             pantalla_Inicio.ShowDialog();
 
-            if (prgBar_Alimento.Value % 10 == 0 || (prgBar_Alimento.Value % 5 == 0))
-            {
-                im_caca.Visibility = Visibility.Visible;
-            }
+           
 
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromMilliseconds(1000.0);
@@ -75,7 +72,10 @@ namespace PinguGochi {
         {
            
             puntuacionTiempoVida(sender, e);
-           
+            Cambio_colores(sender, e);
+            cagar(sender, e); 
+
+
             this.prgBar_Alimento.Value -= decremento;
             this.prgB_Cansancio.Value -= decremento;
             this.prgB_Diversión.Value -= decremento;
@@ -90,6 +90,13 @@ namespace PinguGochi {
                 this.muerte.Visibility = Visibility.Visible;
                 this.lbl_tiempoVida.Visibility = Visibility.Visible;
                 this.lbl_puntuacionJugador.Visibility = Visibility.Visible;
+
+
+
+                im_aburrido.Visibility = Visibility.Hidden;
+                im_conSueño.Visibility = Visibility.Hidden;
+                im_hambriento.Visibility = Visibility.Hidden;
+                lbl_cuidado.Visibility = Visibility.Hidden;
 
                 this.btn_Alimentar.IsEnabled = false;
                 this.btn_Descansar.IsEnabled = false;
@@ -197,8 +204,8 @@ namespace PinguGochi {
             this.prgB_Diversión.Value += 5;
             decremento += 2;
 
-            Storyboard sbmusica = (Storyboard)this.Resources["animacionJugar"];
-            sbmusica.Begin();
+           // Storyboard sbmusica = (Storyboard)this.Resources["animacionJugar"];
+           // sbmusica.Begin();
         }
 
 
@@ -253,10 +260,13 @@ namespace PinguGochi {
         /// <param name="sender"></param>
         /// <param name="e"></param>
 
-        //cagar(sender, e);
+        
         private void cagar(object sender, EventArgs e)
         {
-            
+            if (prgBar_Alimento.Value % 30 == 0 )
+            {
+                im_caca.Visibility = Visibility.Visible;
+            }
         }
 
 
@@ -307,26 +317,39 @@ namespace PinguGochi {
         private void Cambio_colores(object sender, EventArgs e)
         {
           
-            if (prgBar_Alimento.Value == 50 || prgB_Cansancio.Value == 50 || prgB_Diversión.Value == 50)
+            if ((prgBar_Alimento.Value <= 50 && prgBar_Alimento.Value > 25) || (prgB_Cansancio.Value <= 50 && prgB_Cansancio.Value > 25) || (prgB_Diversión.Value <= 50 && prgB_Diversión.Value > 25))
             {
 
                 prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Yellow);
                 prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Yellow);
                 prgB_Diversión.Foreground = new SolidColorBrush(Colors.Yellow);
+                im_aburrido.Visibility = Visibility.Hidden;
+                im_conSueño.Visibility = Visibility.Hidden;
+                im_hambriento.Visibility = Visibility.Hidden;
+                lbl_cuidado.Visibility = Visibility.Hidden;
 
 
             }
-            else if (prgBar_Alimento.Value == 25 || prgB_Cansancio.Value == 25 || prgB_Diversión.Value == 25)
+            else if ((prgBar_Alimento.Value <= 25 && prgBar_Alimento.Value > 15) || (prgB_Cansancio.Value <= 25 && prgB_Cansancio.Value > 15) || (prgB_Diversión.Value <= 25 && prgB_Diversión.Value > 15))
             {
-                prgBar_Alimento.Foreground = new SolidColorBrush(Colors.OrangeRed);
-                prgB_Cansancio.Foreground = new SolidColorBrush(Colors.OrangeRed);
-                prgB_Diversión.Foreground = new SolidColorBrush(Colors.OrangeRed);
+                prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Orange);
+                prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Orange);
+                prgB_Diversión.Foreground = new SolidColorBrush(Colors.Orange);
+                im_aburrido.Visibility = Visibility.Visible;
+                im_conSueño.Visibility = Visibility.Visible;
+                im_hambriento.Visibility = Visibility.Visible;
+                lbl_cuidado.Visibility = Visibility.Visible;
             }
-            else if (prgBar_Alimento.Value == 5 || prgB_Cansancio.Value == 25 || prgB_Diversión.Value == 5)
+            else if (prgBar_Alimento.Value <= 15 || prgB_Cansancio.Value <= 15 || prgB_Diversión.Value <= 15)
             {
                 prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Red);
                 prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Red);
                 prgB_Diversión.Foreground = new SolidColorBrush(Colors.Red);
+                im_aburrido.Visibility = Visibility.Visible;
+                im_conSueño.Visibility = Visibility.Visible;
+                im_hambriento.Visibility = Visibility.Visible;
+                lbl_cuidado.Visibility = Visibility.Visible;
+
             }
         }
 

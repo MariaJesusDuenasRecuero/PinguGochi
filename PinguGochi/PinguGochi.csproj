@@ -161,5 +161,20 @@
   <ItemGroup>
     <Resource Include="mierda.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="piruletas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="aburrido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="yawning-face-twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1f62b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="1f924.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
