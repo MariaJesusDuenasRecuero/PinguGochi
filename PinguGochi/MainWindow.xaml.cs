@@ -204,8 +204,11 @@ namespace PinguGochi {
             this.prgB_Diversión.Value += 5;
             decremento += 2;
 
-           // Storyboard sbmusica = (Storyboard)this.Resources["animacionJugar"];
-           // sbmusica.Begin();
+            Storyboard sbJugar = (Storyboard)this.Resources["animacionJugar"];
+            sbJugar.Begin();
+            Storyboard sbBailar = (Storyboard)this.Resources["animacionBailarIcon"];
+            sbBailar.Begin();
+
         }
 
 

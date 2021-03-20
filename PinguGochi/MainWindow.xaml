@@ -67,163 +67,82 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:5.9" Value="-15.545"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="comer" RepeatBehavior="3x">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="pico">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="moverBrazosComiendo">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1.063"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.025"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.071"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1.055"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.043"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1.24"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.079"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.276"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1.287"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.146"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0.917"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.183"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.55"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-6.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-2.321"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-7.429"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-7.775"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-4.06"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleY)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-11.074"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-6.001"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-12.064"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-13.216"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-8.138"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-17.05"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-19.203"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-16.655"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-16.206"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-18.268"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1.071"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.029"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.08"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1.064"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.049"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0" Value="1.23"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.074"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.265"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1.275"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.139"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0" Value="4.124"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.825"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="4.949"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="2.476"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-7.39"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-2.639"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-8.446"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-8.84"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-4.616"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(SkewTransform.AngleY)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0" Value="12.122"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="6.581"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="13.2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="14.452"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="8.919"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0" Value="19.36"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="21.754"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="18.919"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="18.417"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="20.717"/>
-            </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="animaciónJugar">
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="im_musica">
-                <EasingDoubleKeyFrame KeyTime="0" Value="4.513"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-1.305"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-1.305"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="4.644"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-4.636"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-4.636"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="4.024"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="im_musica">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.063"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1.032"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1.032"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0.951"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="0.951"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.4" Value="1.099"/>
-            </DoubleAnimationUsingKeyFrames>
+        <Storyboard x:Key="animacionJugar">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="im_musica">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.3" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.6" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.9" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.1" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="im_musica">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="13.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="7"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="7"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="26"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="26"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.4" Value="-4.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="im_musica">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1.033"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0.987"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="0.987"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0.912"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="0.912"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.4" Value="1.005"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-13"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-2"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="im_musica">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-8"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="19"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="19"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.4" Value="-5"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="13"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="7"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.6" Value="16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="20"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="brazoDerecha">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="46.893"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="10.067"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="48.294"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="22.461"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="55.667"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="17.719"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="pataIzquierda">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-4.979"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="4.039"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-3.54"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="6.065"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-5.438"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="4.888"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="pataDerecha">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-16.946"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.471"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="-16.089"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-0.897"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-14.332"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-3.701"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="brazoIzq">
-                <EasingDoubleKeyFrame KeyTime="0" Value="-50.574"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-27.271"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-46.652"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-24.163"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="-49.253"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="-34.594"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="-48.279"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.1" Value="-28.794"/>
+                <EasingDoubleKeyFrame KeyTime="0" Value="-13.873"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-24.686"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-12.774"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-22.21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="-18.124"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-25.302"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="brazoDerecha">
+                <EasingDoubleKeyFrame KeyTime="0" Value="13.142"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="23.194"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="14.376"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="24.679"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="14.327"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="25.809"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="animacionBailarIcon">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="im_jugar">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+
 
 
     </Window.Resources>
@@ -252,7 +171,7 @@
         </Grid.RowDefinitions>
         <Image x:Name="img_bosqueNevado" Grid.ColumnSpan="4" Margin="3.5,5.5,2.5,7.5" Grid.RowSpan="6" Source="Woodcut art by Oscar Droege.png" Stretch="UniformToFill" Opacity="0.5"/>
 
-        <ProgressBar x:Name="prgBar_Alimento" Grid.Column="1" Margin="10,15,5,5" Value="100" Foreground="#FF06B025" Background="#FF8ECFDE" BorderBrush="{x:Null}">
+        <ProgressBar x:Name="prgBar_Alimento" Grid.Column="1" Margin="10,15,5,5" Value="100" Foreground="#FF06B025" Background="#FFE0E0FC" BorderBrush="{x:Null}">
             <ProgressBar.Effect>
                 <DropShadowEffect Opacity="0.25" RenderingBias="Quality"/>
             </ProgressBar.Effect>
@@ -593,12 +512,13 @@
         <Image x:Name="muerte" Grid.Column="3" HorizontalAlignment="Left" Height="144" Margin="56,15,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="209" Source="muerte.png" Visibility="Hidden"/>
         <Image x:Name="comerLogo" Grid.Column="3" HorizontalAlignment="Left" Height="144" Margin="56,15,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="169" Source="tenedor.png" Visibility="Hidden"/>
         <Image x:Name="dormirLogo" Grid.Column="3" HorizontalAlignment="Left" Height="149" Margin="40,10,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="174" Source="noche.png" Visibility="Hidden"/>
-        <Image x:Name="im_aburrido" Grid.Column="3" HorizontalAlignment="Center" Margin="186,0,10,50" Grid.RowSpan="2" VerticalAlignment="Center" Source="yawning-face-twitter.png" Grid.Row="1" Visibility="Hidden"/>
+        <Image x:Name="im_aburrido" Grid.Column="3" Margin="186,0,10,50" Grid.RowSpan="2" Source="yawning-face-twitter.png" Grid.Row="1" Visibility="Hidden"/>
         <Image x:Name="im_conSueño" Grid.Column="3" HorizontalAlignment="Center" Margin="90,0,100,50" VerticalAlignment="Center" Source="1f62b.png" Grid.Row="1" Grid.RowSpan="2" Visibility="Hidden"/>
         <StackPanel Margin="12,65,10,0" Grid.Row="3" Background="#3FD9F3F8"/>
         <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2"/>
-        <Image x:Name="im_hambriento" Grid.Column="3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Source="1f924.png" Grid.RowSpan="2" Height="63" Width="66" Visibility="Hidden"/>
-        <Label x:Name="lbl_cuidado" Content="¡CUIDADO!" Grid.Column="3" HorizontalAlignment="Left" Margin="51,10,0,0" VerticalAlignment="Top" FontFamily="Verdana" FontSize="24" FontWeight="Bold" Foreground="#FFEE0C0C" Visibility="Hidden"/>
+        <Image x:Name="im_hambriento" Grid.Column="3" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Source="1f924.png" Grid.RowSpan="2" Visibility="Hidden" Width="69"/>
+        <Label x:Name="lbl_cuidado" Content="¡CUIDADO!" Grid.Column="3" HorizontalAlignment="Center" Margin="51,10,0,0" VerticalAlignment="Center" FontFamily="Verdana" FontSize="24" FontWeight="Bold" Foreground="#FFEE0C0C" Visibility="Hidden"/>
+        <Image x:Name="im_jugar" Grid.Column="3" HorizontalAlignment="Left" Height="144" Margin="56,15,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="146" Source="baile.png" Visibility="Hidden"/>
 
     </Grid>
 </Window>
