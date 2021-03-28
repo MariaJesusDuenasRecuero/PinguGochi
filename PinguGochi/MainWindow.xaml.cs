@@ -27,6 +27,7 @@ namespace PinguGochi {
     public partial class MainWindow : Window
     {
         DispatcherTimer t1;
+       
         int tiempo_vida = 0;
         double decremento = 5.0;
         String nombre;
@@ -40,25 +41,29 @@ namespace PinguGochi {
             Ventana_Bienvenda pantalla_Inicio = new Ventana_Bienvenda(this);
             pantalla_Inicio.ShowDialog();
 
-           
-
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromMilliseconds(1000.0);
             t1.Tick += new EventHandler(reloj);
+
             t1.Start();
-
           
-
-
-
         }
 
+
+        //---------------------------------------------------------------------------
+
+        
+
+
+        //---------------------------------------------------------------------------
     private void puntuacionTiempoVida(object sender, EventArgs e)
         {
+           
             if (prgBar_Alimento.Value < 100 || prgB_Cansancio.Value < 100 || prgB_Diversión.Value < 100)
             {
-             
                 tiempo_vida++;
+                lbl_tiempoVidaP.Content = tiempo_vida;
+                
 
 
             }
@@ -70,7 +75,7 @@ namespace PinguGochi {
       
         private void reloj(object sender, EventArgs e)
         {
-           
+
             puntuacionTiempoVida(sender, e);
             Cambio_colores(sender, e);
             cagar(sender, e); 
@@ -88,7 +93,7 @@ namespace PinguGochi {
                 this.lbl_GameOver.Visibility = Visibility.Visible;
                 this.tumba.Visibility = Visibility.Visible;
                 this.muerte.Visibility = Visibility.Visible;
-                this.lbl_tiempoVida.Visibility = Visibility.Visible;
+                this.lbl_tiempoVidaP.Visibility = Visibility.Visible;
                 this.lbl_puntuacionJugador.Visibility = Visibility.Visible;
 
 
@@ -102,8 +107,8 @@ namespace PinguGochi {
                 this.btn_Descansar.IsEnabled = false;
                 this.btn_divertir.IsEnabled = false;
 
-                this.lbl_tiempoVida.Content = tiempo_vida;
-                this.lbl_tiempoVida.Visibility = Visibility.Visible;
+                this.lbl_tiempoVidaP.Content = tiempo_vida;
+                this.lbl_tiempoVidaP.Visibility = Visibility.Visible;
 
 
 
@@ -292,7 +297,12 @@ namespace PinguGochi {
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
+            DataObject data1 = new DataObject(((Image)sender));
+            DragDrop.DoDragDrop((Image)sender, data1, DragDropEffects.Move);
+
             mascarilla.Visibility = Visibility.Visible;
+            piruleta.Visibility = Visibility.Visible;
+
         }
 
         private void colocarColeccionable(object sender, DragEventArgs e)
@@ -304,6 +314,9 @@ namespace PinguGochi {
             {
                 case "miniMascarillaPingu":
                     miniMascarilla.Visibility = Visibility.Visible;
+                    break;
+                case "miniPiruleta":
+                    miniPiruleta.Visibility = Visibility.Visible;
                     break;
 
             }
