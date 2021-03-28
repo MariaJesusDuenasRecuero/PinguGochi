@@ -44,7 +44,7 @@ namespace PinguGochi {
             t1 = new DispatcherTimer();
             t1.Interval = TimeSpan.FromMilliseconds(1000.0);
             t1.Tick += new EventHandler(reloj);
-
+            this.lbl_tiempoVidaP.Visibility = Visibility.Hidden;
             t1.Start();
           
         }
