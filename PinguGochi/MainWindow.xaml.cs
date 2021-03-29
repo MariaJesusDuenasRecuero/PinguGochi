@@ -46,7 +46,7 @@ namespace PinguGochi {
             t1.Tick += new EventHandler(reloj);
             this.lbl_tiempoVidaP.Visibility = Visibility.Hidden;
             t1.Start();
-          
+           
         }
 
 
@@ -127,7 +127,10 @@ namespace PinguGochi {
             decremento += 2;
 
             btn_Alimentar.IsEnabled = false;
+           
+
             comerLogo.Visibility = Visibility.Visible;
+
 
             DoubleAnimation comer = new DoubleAnimation();
             comer.From = 15;
@@ -148,6 +151,7 @@ namespace PinguGochi {
             brazoDerecha.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             pez.Visibility = Visibility.Visible;
+          
         }
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
@@ -157,6 +161,7 @@ namespace PinguGochi {
 
 
             btn_Descansar.IsEnabled = false;
+           
 
             pataDerechaOso.Visibility = Visibility.Visible;
             cuerpoOso.Visibility = Visibility.Visible;
@@ -201,6 +206,7 @@ namespace PinguGochi {
             pupilaDerecha.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
             pupilaIzquierda.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
 
+            
 
         }
 
@@ -209,10 +215,13 @@ namespace PinguGochi {
             this.prgB_Diversión.Value += 5;
             decremento += 2;
 
+            btn_divertir.IsEnabled = false;
+            
             Storyboard sbJugar = (Storyboard)this.Resources["animacionJugar"];
             sbJugar.Begin();
             Storyboard sbBailar = (Storyboard)this.Resources["animacionBailarIcon"];
             sbBailar.Begin();
+            btn_divertir.IsEnabled = true;
 
         }
 
@@ -246,11 +255,15 @@ namespace PinguGochi {
             gorroDormir.Visibility = Visibility.Hidden;
             cascoAuricular.Visibility = Visibility.Visible;
             auricularesLados.Visibility = Visibility.Visible;
+
+            
         }
 
         private void finComer(object sender, EventArgs e)
         {
             btn_Alimentar.IsEnabled = true;
+           
+
             onomatopeyaComiendo.Visibility = Visibility.Hidden;
             comerLogo.Visibility = Visibility.Hidden;
             pez.Visibility = Visibility.Hidden;
@@ -297,11 +310,11 @@ namespace PinguGochi {
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
-            DataObject data1 = new DataObject(((Image)sender));
-            DragDrop.DoDragDrop((Image)sender, data1, DragDropEffects.Move);
 
-            mascarilla.Visibility = Visibility.Visible;
-            piruleta.Visibility = Visibility.Visible;
+
+
+
+
 
         }
 
@@ -314,9 +327,12 @@ namespace PinguGochi {
             {
                 case "miniMascarillaPingu":
                     miniMascarilla.Visibility = Visibility.Visible;
+                   
+                    
                     break;
                 case "miniPiruleta":
                     miniPiruleta.Visibility = Visibility.Visible;
+                    piruleta.Visibility = Visibility.Visible;
                     break;
 
             }

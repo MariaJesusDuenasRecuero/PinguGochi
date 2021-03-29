@@ -145,6 +145,9 @@
 
 
 
+
+
+
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -152,6 +155,7 @@
             <BeginStoryboard Storyboard="{StaticResource andar}"/>
             <BeginStoryboard Storyboard="{StaticResource andar}"/>
             <BeginStoryboard Storyboard="{StaticResource andarPataDerecha}"/>
+            
         </EventTrigger>
     </Window.Triggers>
     <Grid x:Name="Grid_Copy" RenderTransformOrigin="0.484,0.507" Background="#FF67D6F7">
@@ -505,19 +509,18 @@
         <Image Margin="10,-20,22,245" Source="log-tamagochi.png" Stretch="UniformToFill" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="100" MinHeight="100" Height="209" Width="234" MouseLeftButtonUp="acerca_de" Grid.RowSpan="4" ToolTip="Acerca de...."/>
         <WrapPanel Margin="10,57,10,0" Grid.Row="3" Background="#7FB2E7F0" Grid.Column="3">
             <Image Height="115.5" Width="133.5" Margin="10" Source="descarga.jpg" MouseUp="cambiarFondo" ToolTip="¡Pulsa para cambiar el fondo!"/>
-            <Image x:Name="miniMascarilla" Height="82" Width="82" Source="mascarilla-medica.png" MouseLeftButtonDown="arrastrarMascarilla"/>
             <Image x:Name="miniPiruleta" Height="48" Width="72" Source="piruletas.png" MouseLeftButtonDown="arrastrarMascarilla" Margin="10,10,10,5"/>
+            <Image x:Name="miniMascarilla" Height="82" Width="82" Source="mascarilla-medica.png" MouseLeftButtonDown="arrastrarMascarilla"/>
         </WrapPanel>
         <StackPanel Margin="10,70,11,0" Grid.Row="4" Background="#3FD9F3F8" Grid.Column="3"/>
         <Label x:Name="lbl_GameOver" Content="GAME OVER" Grid.Column="1" Margin="94.5,225.5,107.759,1.5" Grid.Row="4" FontSize="36" FontFamily="MineCrafter 3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Logros" HorizontalAlignment="Left" Margin="28,26,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
-        <Label Content="Premios" Margin="28,26,0,0" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Label Content="Ranking" HorizontalAlignment="Left" Margin="10,26,0,0" Grid.Row="4" VerticalAlignment="Top" Width="121" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
-        <Label Content="Coleccionables" HorizontalAlignment="Left" Margin="3,20,0,0" Grid.Row="3" VerticalAlignment="Top" Width="211" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
-        <Image Margin="210,25,16,0" Grid.Row="3" VerticalAlignment="Top" Source="insignia.png" Width="40" Height="40" RenderTransformOrigin="0.325,1.375"/>
-        <Image Margin="216,29,10,0" Grid.Row="4" VerticalAlignment="Top" Source="exito.png" Width="40" Height="40"/>
-        <Image Height="40" Margin="208,29,17,0" Grid.Row="4" VerticalAlignment="Top" Width="40" Source="top-three.png" Grid.Column="3"/>
-        <Image Height="40" Margin="199.738,9,17.738,0" Grid.Row="3" VerticalAlignment="Top" Width="40" Source="coleccionar-monedas.png" Grid.Column="3"/>
+        <Label Content="Logros" Margin="28,26,0,0" Grid.Row="3" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
+        <Label Content="Premios" Margin="28,26,0,0" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
+        <Label Content="Ranking" Margin="10,26,0,0" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
+        <Image Margin="189,9.261,14,203.261" Grid.Row="3" Source="insignia.png" RenderTransformOrigin="0.325,1.375" Height="50" VerticalAlignment="Top"/>
+        <Image Margin="199,9.761,8,203.761" Grid.Row="4" Source="exito.png" Height="50" VerticalAlignment="Top"/>
+        <Image Margin="196,18.761,15,208.761" Grid.Row="4" Source="top-three.png" Grid.Column="3" Height="50" VerticalAlignment="Top"/>
+        <Image Margin="194.738,1.999,15.738,206.999" Grid.Row="3" Source="coleccionar-monedas.png" Grid.Column="3" Height="50" VerticalAlignment="Top"/>
         <Image x:Name="tumba" Height="379" Margin="238,57,238,110" Width="540" Source="tumba (1).png" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Center" Visibility="Hidden"/>
         <Label x:Name="onomatopeyaComiendo" Content="Ñam Ñam Ñam..." HorizontalAlignment="Left" Margin="129,86,0,0" Grid.Row="3" VerticalAlignment="Top" Width="233" FontSize="24" FontFamily="Palatino Linotype" Grid.Column="1" FontWeight="Bold" Height="49" Visibility="Hidden"/>
         <Image x:Name="muerte" Grid.Column="3" HorizontalAlignment="Left" Height="169" Margin="56,0,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="174" Source="muerte.png" Visibility="Hidden"/>
@@ -526,11 +529,74 @@
         <Image x:Name="im_aburrido" Grid.Column="3" Margin="186,0,10,50" Grid.RowSpan="2" Source="pinguAburrido.png" Grid.Row="1" Visibility="Hidden"/>
         <Image x:Name="im_conSueño" Grid.Column="3" HorizontalAlignment="Center" Margin="90,0,100,50" VerticalAlignment="Center" Source="pinguCansado.png" Grid.Row="1" Grid.RowSpan="2" Visibility="Hidden"/>
         <StackPanel Margin="12,65,10,0" Grid.Row="3" Background="#3FD9F3F8"/>
-        <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2"/>
+        <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2">
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+            <Image Height="50" Source="trofeox16.png" Margin="20,10,10,10" Opacity="0.5"/>
+        </WrapPanel>
         <Image x:Name="im_hambriento" Grid.Column="3" HorizontalAlignment="Left" Margin="10,0,0,50" Grid.Row="1" VerticalAlignment="Top" Source="pinguHambriento.png" Grid.RowSpan="2" RenderTransformOrigin="0.507,0.292" Visibility="Hidden"/>
         <Label x:Name="lbl_cuidado" Content="¡CUIDADO!" Grid.Column="3" HorizontalAlignment="Center" Margin="51,10,0,0" VerticalAlignment="Center" FontFamily="Verdana" FontSize="24" FontWeight="Bold" Foreground="#FFEE0C0C" Visibility="Hidden"/>
+        <Label Content="Coleccionables" Margin="0,20,19,213" Grid.Row="3" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
         <Image x:Name="im_jugar" Grid.Column="3" HorizontalAlignment="Left" Height="127" Margin="61,32,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="141" Source="baile.png" Visibility="Hidden"/>
-        <Grid Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="106" Margin="45,176,0,0" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top" Width="396"/>
+        <Grid HorizontalAlignment="Left" Height="200" Margin="20.523,149,0,0" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top" Width="450" Grid.Column="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
+            <Path x:Name="rectanguloLogro" Fill="#FF14658D" Stroke="Black" Grid.ColumnSpan="3" Data="M64.712265,0.5 L64.816971,0.5 351.89501,0.5 351.89501,1.5226309 354.31916,1.5839283 C388.39902,3.3114395 415.5,31.490834 415.5,66.000001 415.5,101.62237 386.62237,130.5 351,130.5 347.6604,130.5 344.38008,130.24619 341.17729,129.75682 L339.69578,129.49225 76.045792,129.49225 74.611801,129.75104 C71.418091,130.24422 68.147095,130.5 64.816971,130.5 29.295685,130.5 0.5,101.39851 0.5,65.500001 0.5,30.723321 27.524078,2.3254814 61.507233,0.58457831 L64.712265,0.50267765 z" Margin="15.605,23,20.395,61" RenderTransformOrigin="0.84375,0.503816796376512" Stretch="Fill">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Ellipse x:Name="bolaClara" Fill="#FF1B8FC9" Height="130" Margin="93.605,24,115.605,46" Stroke="Black" Width="130" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Ellipse x:Name="bolaOscura" Fill="#FF14658D" Height="130" Margin="93.605,23,115.395,47" Stroke="Black" Width="130" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Path x:Name="bolaBlanca" Data="M39.552025,26.029676 L39.781521,26.221859 C51.67865,36.442337 59.445858,52.986725 59.5718,71.805153 59.576771,72.547989 59.56979,73.287766 59.551075,74.024246 L59.54071,74.334167 58.828045,74.732559 C53.231159,77.772972 46.817265,79.5 40,79.5 32.501007,79.5 25.490093,77.410301 19.517813,73.781448 L19.052361,73.490898 19.049294,72.687103 C19.052679,72.194656 19.061342,71.700821 19.075346,71.205658 19.593493,52.884903 27.30891,36.774731 38.899784,26.588783 z M11.937622,15.414529 C18.178972,15.472419 24.136765,16.93084 29.595028,19.540697 L30.181114,19.830925 29.76523,20.219009 C21.343792,28.270058 15.818926,40.354023 15.433073,53.997139 15.247037,60.575066 16.274199,66.858658 18.279301,72.556877 L18.489759,73.132217 17.915174,72.754021 C7.4081059,65.655586 0.5,53.634529 0.5,40 0.5,30.796692 3.6475058,22.328524 8.9248009,15.613213 L9.0212498,15.493456 9.4338989,15.466354 C9.8498211,15.445272 10.267088,15.430363 10.685635,15.421699 11.104182,15.413034 11.521532,15.410669 11.937622,15.414529 z M67.844955,15.180485 C68.286949,15.178904 68.730225,15.184354 69.174698,15.196924 69.488441,15.205797 69.801392,15.218179 70.113518,15.234036 L70.804352,15.276917 71.075195,15.613213 C76.352493,22.328524 79.5,30.796692 79.5,40 79.5,54.316254 71.883812,66.853653 60.482185,73.781448 L60.474056,73.786255 60.481941,73.765106 C62.521553,68.074745 63.633289,61.805019 63.589325,55.236092 63.494133,41.011631 58.000145,28.414093 49.457981,20.191586 L48.987617,19.749901 49.081474,19.701445 C54.871986,16.810123 61.21497,15.204206 67.844955,15.180485 z M40,0.5 C51.248486,0.5 61.398804,5.2018299 68.592812,12.747354 L69.064743,13.254313 68.829124,13.138878 C64.672295,11.185716 60.144924,10.054256 55.388691,9.9197407 50.048363,9.7687073 44.925068,10.888814 40.23304,13.043735 L39.596424,13.346605 39.122208,13.124803 C34.773418,11.164633 30.042797,10.136305 25.100388,10.238609 19.910858,10.34603 14.971441,11.689963 10.475849,14.032199 L10.026559,14.2751 10.132177,14.150188 C17.374889,5.7890186 28.069786,0.5 40,0.5 z" Fill="#FFF7F7F7" Margin="120.605,49,142.605,71" Stretch="Fill" Stroke="Black" Width="80" Height="80" RenderTransformOrigin="0.5,0.5" Grid.Column="1" d:IsHidden="True" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Grid.ColumnSpan="2" Data="M13.574744,51.499999 L54.574744,51.499999 54.574744,66.499999 13.574744,66.499999 z M26.574744,44.499999 L34.574744,44.499999 42.574744,44.499999 42.574744,50.499999 26.574744,50.499999 z M54.574744,9.3690017 L54.574744,15.777552 54.630626,15.957872 C55.244205,18.024528 55.574744,20.221824 55.574744,22.499999 55.574744,25.727413 54.911368,28.79251 53.719672,31.553804 L53.718959,31.555408 53.958644,31.363252 C57.42242,28.51081 59.574771,24.518394 59.574771,20.099464 59.574771,16.04878 57.766196,12.356482 54.796779,9.5721229 z M15.124999,8.4221834 L14.790267,8.6697801 C10.789337,11.700494 8.33354,16.152271 8.5160441,21.024913 8.6833391,25.491502 11.034875,29.439603 14.673359,32.163955 L14.727773,32.203716 14.517214,32.186355 C6.7656574,31.474956 0.72674084,26.79936 0.5062151,20.911582 0.27408314,14.713922 6.571332,9.3733724 14.862741,8.4489759 z M15.574744,0.5 L34.574744,0.5 54.574744,0.5 54.574744,8.8060545 54.713695,8.8264049 C62.075568,10.029375 67.574744,14.804729 67.574744,20.512512 67.574744,26.520704 61.481475,31.495733 53.536345,32.358489 L53.343516,32.376056 53.277358,32.515533 C49.798755,39.630439 42.729575,44.499999 34.574744,44.499999 22.976765,44.499999 13.574745,34.650264 13.574744,22.499999 13.574745,19.272586 14.238119,16.207488 15.429816,13.446196 L15.574744,13.12101 z" Fill="#FFF2F9FD" Height="67" Margin="35.425,46.5,295.5,86.5" Stretch="Fill" Stroke="Black" Width="68.075"/>
+            <Label Content="LOGRO DESBLOQUEADO" Grid.Column="1" Height="34" Margin="82,35,33,131" Width="224" FontSize="18" FontWeight="Bold" Background="#00000000" Foreground="#FFE6F2F7"/>
+            <Ellipse Grid.Column="1" Fill="#FFF2F9FD" Height="30" Margin="83.5,71.5,225.5,98.5" Stroke="Black" Width="30"/>
+            <Label Content="G " Grid.Column="1" Height="44" Margin="87,68,213,88" Width="39" FontSize="18" FontWeight="Bold" Foreground="#FF14658D"/>
+            <Label Content="50" Grid.Column="1" Height="44" Margin="115,69,185,87" Width="39" FontSize="18" FontWeight="Bold" Foreground="#FFEEF8FD"/>
+            <Label Content="- COME  PECES" Grid.Column="1" Height="34" Margin="145.5,68,14.5,98" Width="179" FontSize="18" FontWeight="Bold" Background="#00000000" Foreground="#FFE6F2F7"/>
+        </Grid>
 
     </Grid>
 </Window>
