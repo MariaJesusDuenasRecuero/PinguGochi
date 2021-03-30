@@ -75,7 +75,7 @@ namespace PinguGochi {
       
         private void reloj(object sender, EventArgs e)
         {
-
+            premios_coleccionables(sender, e);
             puntuacionTiempoVida(sender, e);
             Cambio_colores(sender, e);
             cagar(sender, e); 
@@ -123,7 +123,7 @@ namespace PinguGochi {
         /// <param name="e"></param>
         private void btn_Alimentar_Click(object sender, RoutedEventArgs e)
         {
-            this.prgBar_Alimento.Value += 5;
+            this.prgBar_Alimento.Value += 10;
             decremento += 2;
 
             btn_Alimentar.IsEnabled = false;
@@ -156,7 +156,7 @@ namespace PinguGochi {
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
         {
-            this.prgB_Cansancio.Value += 5;
+            this.prgB_Cansancio.Value += 10;
             decremento += 2;
 
 
@@ -212,7 +212,7 @@ namespace PinguGochi {
 
         private void btn_divertir_Click(object sender, RoutedEventArgs e)
         {
-            this.prgB_Diversión.Value += 5;
+            this.prgB_Diversión.Value += 10;
             decremento += 2;
 
             btn_divertir.IsEnabled = false;
@@ -334,6 +334,15 @@ namespace PinguGochi {
                     miniPiruleta.Visibility = Visibility.Visible;
                     piruleta.Visibility = Visibility.Visible;
                     break;
+                case "miniGorro":
+                    miniGorro.Visibility = Visibility.Visible;
+                    gorro.Visibility = Visibility.Visible;
+                    auricularesLados.Visibility = Visibility.Hidden;
+                    cascoAuricular.Visibility = Visibility.Hidden;
+                    break;
+                case "miniIglu":
+                   iglu.Visibility = Visibility.Visible;
+                    break;
 
             }
         }
@@ -385,8 +394,35 @@ namespace PinguGochi {
             }
         }
 
+        private void premios_coleccionables(object sender, EventArgs e)
+        {
+            if (tiempo_vida == 5)
+            {
+                miniIglu.Visibility = Visibility.Visible;
+                im_logroGorro.Visibility = Visibility.Visible;
+                miniGorro.Visibility = Visibility.Visible;
+            }
+            else if (tiempo_vida == 15)
+            {
+                miniPiruleta.Visibility = Visibility.Visible;
+                im_logroPiruleta.Visibility = Visibility.Visible;
+                miniPiruleta.Visibility = Visibility.Visible;
+            }
+            else if (tiempo_vida == 17)
+            {
+                miniMascarilla.Visibility = Visibility.Visible;
+                im_logroMascarilla.Visibility = Visibility.Visible;
+                miniMascarilla.Visibility = Visibility.Visible;
+            }
+            else if (tiempo_vida == 20)
+            {
+                miniIglu.Visibility = Visibility.Visible;
+                im_logroIglu.Visibility = Visibility.Visible;
+                miniIglu.Visibility = Visibility.Visible;
+            }
+            }
 
-
+        
 
         /// <summary>
         /// Metodos de interaccion con el usuario.

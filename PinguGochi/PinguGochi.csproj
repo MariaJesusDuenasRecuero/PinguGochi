@@ -197,5 +197,23 @@
   <ItemGroup>
     <Resource Include="trofeox16.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sombrero-de-invierno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PremioGorro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PremioPiruleta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PremioMascarilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="iglu %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="iglu.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
