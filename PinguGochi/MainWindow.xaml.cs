@@ -29,7 +29,7 @@ namespace PinguGochi {
         DispatcherTimer t1;
        
         int tiempo_vida = 0;
-        double decremento = 5.0;
+        double decremento = 3.0;
         String nombre;
 
 
@@ -313,7 +313,7 @@ namespace PinguGochi {
 
 
 
-
+            miniIglu.Visibility = Visibility.Hidden;
 
 
         }
@@ -339,9 +339,12 @@ namespace PinguGochi {
                     gorro.Visibility = Visibility.Visible;
                     auricularesLados.Visibility = Visibility.Hidden;
                     cascoAuricular.Visibility = Visibility.Hidden;
+                    iglu.Visibility = Visibility.Hidden;
+                   
                     break;
                 case "miniIglu":
-                   iglu.Visibility = Visibility.Visible;
+                    iglu.Visibility = Visibility.Visible;
+                    miniIglu.Visibility = Visibility.Visible;
                     break;
 
             }
@@ -360,7 +363,6 @@ namespace PinguGochi {
           
             if ((prgBar_Alimento.Value <= 50 && prgBar_Alimento.Value > 25) || (prgB_Cansancio.Value <= 50 && prgB_Cansancio.Value > 25) || (prgB_Diversión.Value <= 50 && prgB_Diversión.Value > 25))
             {
-
                 prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Yellow);
                 prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Yellow);
                 prgB_Diversión.Foreground = new SolidColorBrush(Colors.Yellow);
@@ -368,8 +370,6 @@ namespace PinguGochi {
                 im_conSueño.Visibility = Visibility.Hidden;
                 im_hambriento.Visibility = Visibility.Hidden;
                 lbl_cuidado.Visibility = Visibility.Hidden;
-
-
             }
             else if ((prgBar_Alimento.Value <= 25 && prgBar_Alimento.Value > 15) || (prgB_Cansancio.Value <= 25 && prgB_Cansancio.Value > 15) || (prgB_Diversión.Value <= 25 && prgB_Diversión.Value > 15))
             {
@@ -398,24 +398,32 @@ namespace PinguGochi {
         {
             if (tiempo_vida == 5)
             {
+                Storyboard sbGorro = (Storyboard)this.Resources["animacionPremioGorro"];
+                sbGorro.Begin();
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroGorro.Visibility = Visibility.Visible;
                 miniGorro.Visibility = Visibility.Visible;
             }
             else if (tiempo_vida == 15)
             {
+                Storyboard sbPiruleta = (Storyboard)this.Resources["animacionPremioPiruleta"];
+                sbPiruleta.Begin();
                 miniPiruleta.Visibility = Visibility.Visible;
                 im_logroPiruleta.Visibility = Visibility.Visible;
                 miniPiruleta.Visibility = Visibility.Visible;
             }
             else if (tiempo_vida == 17)
             {
+                Storyboard sbMascarilla = (Storyboard)this.Resources["animacionPremioMascarilla"];
+                sbMascarilla.Begin();
                 miniMascarilla.Visibility = Visibility.Visible;
                 im_logroMascarilla.Visibility = Visibility.Visible;
                 miniMascarilla.Visibility = Visibility.Visible;
             }
             else if (tiempo_vida == 20)
             {
+                Storyboard sbIglu = (Storyboard)this.Resources["animacionPremioIglu"];
+                sbIglu.Begin();
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroIglu.Visibility = Visibility.Visible;
                 miniIglu.Visibility = Visibility.Visible;

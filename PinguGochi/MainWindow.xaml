@@ -141,6 +141,32 @@
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
+        <Storyboard x:Key="animacionPremioGorro">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="premioGorro">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animacionPremioPiruleta">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="premioPiruleta">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.514" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animacionPremioMascarilla">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="premioMascarilla">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animacionPremioIglu">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="premioIglu">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
 
 
 
@@ -553,14 +579,14 @@
         <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2">
             <Image x:Name="im_logroGorro" Source="PremioGorro.png" Margin="25,20,10,10" Height="75" Width="75" Visibility="Hidden"/>
             <Image x:Name="im_logroPiruleta" Source="PremioPiruleta.png" Margin="10" Height="75" Width="75" Visibility="Hidden"/>
-            <Image x:Name="im_logroMascarilla" Source="PremioMascarilla.png" Margin="25,0,10,10" Height="75" Width="75"/>
-            <Image x:Name="im_logroIglu" Source="PremioMascarilla.png" Margin="10,0,25,25" Height="75" Width="75"/>
+            <Image x:Name="im_logroMascarilla" Source="PremioMascarilla.png" Margin="25,0,10,10" Height="75" Width="75" Visibility="Hidden"/>
+            <Image x:Name="im_logroIglu" Source="PremioMascarilla.png" Margin="10,0,25,25" Height="75" Width="75" Visibility="Hidden"/>
         </WrapPanel>
         <Image x:Name="im_hambriento" Grid.Column="3" HorizontalAlignment="Left" Margin="10,0,0,50" Grid.Row="1" VerticalAlignment="Top" Source="pinguHambriento.png" Grid.RowSpan="2" RenderTransformOrigin="0.507,0.292" Visibility="Hidden"/>
         <Label x:Name="lbl_cuidado" Content="¡CUIDADO!" Grid.Column="3" HorizontalAlignment="Center" Margin="51,10,0,0" VerticalAlignment="Center" FontFamily="Verdana" FontSize="24" FontWeight="Bold" Foreground="#FFEE0C0C" Visibility="Hidden"/>
         <Label Content="Coleccionables" Margin="0,10,19,213" Grid.Row="3" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
         <Image x:Name="im_jugar" Grid.Column="3" HorizontalAlignment="Left" Height="127" Margin="61,32,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="141" Source="baile.png" Visibility="Hidden"/>
-        <Grid HorizontalAlignment="Left" Height="200" Margin="20.523,149,0,0" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top" Width="450" Grid.Column="1" Grid.ColumnSpan="2">
+        <Grid Height="200" Margin="20.523,149,0,0" Grid.Row="4" Grid.RowSpan="2" Width="450" Grid.Column="1" Grid.ColumnSpan="2" d:IsHidden="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20*"/>
                 <ColumnDefinition Width="113*"/>
