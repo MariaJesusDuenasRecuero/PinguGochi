@@ -455,8 +455,8 @@ namespace PinguGochi {
         {
             if(tickCagar==1)
             {
-               // Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
-                //sbCaga.Begin();
+               Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
+                sbCaga.Begin();
             }
             else if (tickComer==6)
             {
@@ -465,12 +465,13 @@ namespace PinguGochi {
                 sbComer.Begin();
                 logroComer.Visibility = Visibility.Visible;
             }
-            else if (tickJugar==6)
+            else if (tickJugar==3)
             {
 
-            }else if (tickDormir==6)
+            }else if (tickDormir==3)
             {
-
+                Storyboard sbDormir = (Storyboard)this.Resources["animacionLogroDormir"];
+                sbDormir.Begin();
             }
         }
 
