@@ -222,6 +222,11 @@ namespace PinguGochi {
             Storyboard sbBailar = (Storyboard)this.Resources["animacionBailarIcon"];
             sbBailar.Begin();
             btn_divertir.IsEnabled = true;
+            bolaBlanca.Visibility = Visibility.Visible;
+            bolaClara.Visibility = Visibility.Visible;
+            bolaOscura.Visibility = Visibility.Visible;
+            Storyboard sbLogro = (Storyboard)this.Resources["animacionLogros"];
+            sbLogro.Begin();
 
         }
 
@@ -412,7 +417,7 @@ namespace PinguGochi {
                 im_logroPiruleta.Visibility = Visibility.Visible;
                 miniPiruleta.Visibility = Visibility.Visible;
             }
-            else if (tiempo_vida == 17)
+            else if (tiempo_vida == 20)
             {
                 Storyboard sbMascarilla = (Storyboard)this.Resources["animacionPremioMascarilla"];
                 sbMascarilla.Begin();
@@ -420,7 +425,7 @@ namespace PinguGochi {
                 im_logroMascarilla.Visibility = Visibility.Visible;
                 miniMascarilla.Visibility = Visibility.Visible;
             }
-            else if (tiempo_vida == 20)
+            else if (tiempo_vida == 23)
             {
                 Storyboard sbIglu = (Storyboard)this.Resources["animacionPremioIglu"];
                 sbIglu.Begin();

@@ -215,5 +215,14 @@
   <ItemGroup>
     <Resource Include="iglu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logroCagarMini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logrocomermini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logroDormirMini.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
