@@ -167,175 +167,38 @@
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
-        <Storyboard x:Key="animacionLogros">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+        
+        <Storyboard x:Key="animacionVive5">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive5">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.23" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.327" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.461" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:7" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.3" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="path">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive10">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive20">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ellipse">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive25">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label1">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+        </Storyboard>
+        <Storyboard x:Key="animacionVive10">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive10">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label2">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+        </Storyboard>
+        <Storyboard x:Key="animacionvive20">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive20">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label3">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.681" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.499" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.771" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.451" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.269" Value="130"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.681" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.499" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.771" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.451" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.269" Value="130"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.887" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.438" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.712" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.225" Value="130"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.887" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.438" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.712" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.225" Value="130"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.095" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.373" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.65" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.344" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.177" Value="80"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.095" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.373" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.65" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.344" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.177" Value="80"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.499" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.771" Value="-29"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.451" Value="-127"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.269" Value="-160"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.814" Value="-154"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.495" Value="-111"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.585" Value="-52"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.401" Value="-10"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7.083" Value="-9"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.438" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.712" Value="-29"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="-127"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.225" Value="-160"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.775" Value="-154"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.463" Value="-111"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.562" Value="-52"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.388" Value="-10"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7.075" Value="-9"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.373" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.65" Value="-29"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.344" Value="-127"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.177" Value="-160"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.733" Value="-154"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.428" Value="-111"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.539" Value="-52"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.372" Value="-10"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7.067" Value="-9"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.499" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.771" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.451" Value="2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.269" Value="-2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.814" Value="-3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.495" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.585" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.401" Value="2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7.083" Value="-192"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.438" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.712" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.225" Value="-2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.775" Value="-3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.463" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.562" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.388" Value="2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7.075" Value="-192"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.373" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.65" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.344" Value="2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.177" Value="-2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.733" Value="-3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.428" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.539" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.372" Value="2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7.067" Value="-192"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaBlanca">
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.344" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.177" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:7.067" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:7.9" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0:0:3.23" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.77" Value="0.84"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.443" Value="0.709"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.52" Value="0.616"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.327" Value="0.277"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="0.175"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0:0:3.23" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.77" Value="35.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.443" Value="6.5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.52" Value="27"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.327" Value="-2"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="-6.5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaClara">
-                <DiscreteObjectKeyFrame KeyTime="0:0:7.083" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:7.9" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaOscura">
-                <DiscreteObjectKeyFrame KeyTime="0:0:7.075" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:7.9" Value="{x:Static Visibility.Hidden}"/>
+        </Storyboard>
+        <Storyboard x:Key="animacionVive25">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive25">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
@@ -407,12 +270,12 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Canvas.RenderTransform>
-            <Image x:Name="iglu" Height="213" Canvas.Left="247" Canvas.Top="149" Width="214" Source="iglu.png" RenderTransformOrigin="0.387,0.337" Visibility="Hidden">
+            <Image x:Name="iglu" Height="213" Canvas.Left="7" Canvas.Top="322" Width="214" Source="iglu.png" RenderTransformOrigin="0.387,0.337" Visibility="Hidden">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
                         <SkewTransform/>
-                        <RotateTransform Angle="-0.752"/>
+                        <RotateTransform Angle="0.225"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </Image.RenderTransform>
@@ -722,6 +585,10 @@
             <Image x:Name="premioPiruleta" Source="PremioPiruleta.png" Canvas.Left="315" Canvas.Top="33" Visibility="Hidden"/>
             <Image x:Name="premioMascarilla" Source="PremioMascarilla.png" Canvas.Left="311" Canvas.Top="33" Visibility="Hidden"/>
             <Image x:Name="premioIglu" Source="PremioMascarilla.png" Canvas.Left="311" Canvas.Top="33" RenderTransformOrigin="0.452,-0.5" Visibility="Hidden"/>
+            <Label x:Name="vive5" Content="ENHORABUENA HA SOBREVIVIDO 5 SEGUNDOS" Canvas.Left="14" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
+            <Label x:Name="vive10" Content="ENHORABUENA HA SOBREVIVIDO 15 SEGUNDOS" Canvas.Left="25" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
+            <Label x:Name="vive20" Content="ENHORABUENA HA SOBREVIVIDO 20 SEGUNDOS" Canvas.Left="25" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
+            <Label x:Name="vive25" Content="ENHORABUENA HA SOBREVIVIDO 20 SEGUNDOS" Canvas.Left="37" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
         </Canvas>
         <Image Margin="12,-20,20,245" Source="log-tamagochi.png" Stretch="UniformToFill" MinWidth="100" MinHeight="100" Height="209" Width="234" MouseLeftButtonUp="acerca_de" Grid.RowSpan="4" ToolTip="Acerca de...."/>
         <WrapPanel Margin="10,57,10,0" Grid.Row="3" Background="#7FB2E7F0" Grid.Column="3">
@@ -749,9 +616,9 @@
         <Image x:Name="im_conSueño" Grid.Column="3" HorizontalAlignment="Center" Margin="83,22,92,0" VerticalAlignment="Center" Source="pinguCansado.png" Grid.RowSpan="2" Grid.Row="1" Visibility="Hidden"/>
         <Image x:Name="im_hambriento" Grid.Column="3" HorizontalAlignment="Left" Margin="5,26,0,0" Grid.Row="1" VerticalAlignment="Top" Source="pinguHambriento.png" Grid.RowSpan="2" RenderTransformOrigin="0.507,0.292" Visibility="Hidden"/>
         <StackPanel Margin="12,65,10,0" Grid.Row="3" Background="#3FD9F3F8">
-            <Image x:Name="logroCagar" Height="78" Source="logroCagarMini.png"/>
-            <Image x:Name="logroComer" Height="78" Source="logrocomermini.png"/>
-            <Image x:Name="logroDormirmini" Height="78" Source="logroDormirMini.png"/>
+            <Image x:Name="logroCagar" Height="78" Source="logroCagarMini.png" Visibility="Hidden"/>
+            <Image x:Name="logroComer" Height="78" Source="logrocomermini.png" Visibility="Hidden"/>
+            <Image x:Name="logroDormirmini" Height="78" Source="logroDormirMini.png" Visibility="Hidden"/>
         </StackPanel>
         <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2">
             <Image x:Name="im_logroGorro" Source="PremioGorro.png" Margin="25,20,10,10" Height="75" Width="75" Visibility="Hidden"/>
@@ -808,17 +675,7 @@
                     </TransformGroup>
                 </Path.RenderTransform>
             </Path>
-            <Path x:Name="path" Grid.ColumnSpan="2" Data="M13.574744,51.499999 L54.574744,51.499999 54.574744,66.499999 13.574744,66.499999 z M26.574744,44.499999 L34.574744,44.499999 42.574744,44.499999 42.574744,50.499999 26.574744,50.499999 z M54.574744,9.3690017 L54.574744,15.777552 54.630626,15.957872 C55.244205,18.024528 55.574744,20.221824 55.574744,22.499999 55.574744,25.727413 54.911368,28.79251 53.719672,31.553804 L53.718959,31.555408 53.958644,31.363252 C57.42242,28.51081 59.574771,24.518394 59.574771,20.099464 59.574771,16.04878 57.766196,12.356482 54.796779,9.5721229 z M15.124999,8.4221834 L14.790267,8.6697801 C10.789337,11.700494 8.33354,16.152271 8.5160441,21.024913 8.6833391,25.491502 11.034875,29.439603 14.673359,32.163955 L14.727773,32.203716 14.517214,32.186355 C6.7656574,31.474956 0.72674084,26.79936 0.5062151,20.911582 0.27408314,14.713922 6.571332,9.3733724 14.862741,8.4489759 z M15.574744,0.5 L34.574744,0.5 54.574744,0.5 54.574744,8.8060545 54.713695,8.8264049 C62.075568,10.029375 67.574744,14.804729 67.574744,20.512512 67.574744,26.520704 61.481475,31.495733 53.536345,32.358489 L53.343516,32.376056 53.277358,32.515533 C49.798755,39.630439 42.729575,44.499999 34.574744,44.499999 22.976765,44.499999 13.574745,34.650264 13.574744,22.499999 13.574745,19.272586 14.238119,16.207488 15.429816,13.446196 L15.574744,13.12101 z" Fill="#FFF2F9FD" Height="67" Margin="52.425,77.5,278.5,55.5" Stretch="Fill" Stroke="Black" Width="68.075" RenderTransformOrigin="0.5,0.5" d:IsHidden="True" Visibility="Hidden">
-                <Path.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Path.RenderTransform>
-            </Path>
-            <Label x:Name="label" Content="LOGRO DESBLOQUEADO" Grid.Column="1" Height="34" Margin="89,68,26,98" Width="224" FontSize="18" FontWeight="Bold" Background="#00000000" Foreground="#FFE6F2F7" RenderTransformOrigin="0.5,0.5" d:IsHidden="True" Visibility="Hidden">
+            <Label x:Name="label" Content="LOGRO DESBLOQUEADO" Grid.Column="1" Height="34" Margin="89,68,26,98" Width="224" FontSize="18" FontWeight="Bold" Background="#00000000" Foreground="#FFE6F2F7" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
                 <Label.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -828,17 +685,7 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <Ellipse x:Name="ellipse" Grid.Column="1" Fill="#FFF2F9FD" Height="30" Margin="90.5,104.5,218.5,65.5" Stroke="Black" Width="30" RenderTransformOrigin="0.5,0.5" d:IsHidden="True" Visibility="Hidden">
-                <Ellipse.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Ellipse.RenderTransform>
-            </Ellipse>
-            <Label x:Name="label1" Content="G " Grid.Column="1" Height="44" Margin="94,101,206,55" Width="39" FontSize="18" FontWeight="Bold" Foreground="#FF14658D" RenderTransformOrigin="0.5,0.5" d:IsHidden="True" Visibility="Hidden">
+            <Label x:Name="tituloLogro" Content="" Grid.Column="1" Height="34" Margin="114.5,98,45.5,68" Width="179" FontSize="18" FontWeight="Bold" Background="#00000000" Foreground="#FFE6F2F7" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
                 <Label.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -848,26 +695,10 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
-            <Label x:Name="label2" Content="50" Grid.Column="1" Height="44" Margin="122,102,178,54" Width="39" FontSize="18" FontWeight="Bold" Foreground="#FFEEF8FD" RenderTransformOrigin="0.5,0.5" d:IsHidden="True" Visibility="Hidden">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
-            <Label x:Name="label3" Content="- COME  PECES" Grid.Column="1" Height="34" Margin="152.5,101,7.5,65" Width="179" FontSize="18" FontWeight="Bold" Background="#00000000" Foreground="#FFE6F2F7" RenderTransformOrigin="0.5,0.5" d:IsHidden="True" Visibility="Hidden">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
+            <Image x:Name="logrokk" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="78" Margin="14.738,69,0,0" VerticalAlignment="Top" Width="72" Source="logroCagar.png" Visibility="Hidden"/>
+            <Image x:Name="logroDormir" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="78" Margin="14.738,69,0,0" VerticalAlignment="Top" Width="72" Source="logroDormir.png" Visibility="Hidden"/>
+            <Image x:Name="logroComer1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="78" Margin="14.738,69,0,0" VerticalAlignment="Top" Width="72" Source="logroComer.png" Visibility="Hidden"/>
+            <Image x:Name="logroJugar" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="78" Margin="14.738,69,0,0" VerticalAlignment="Top" Width="72" Source="logroJugar.png" Visibility="Hidden"/>
         </Grid>
 
     </Grid>

@@ -27,7 +27,11 @@ namespace PinguGochi {
     public partial class MainWindow : Window
     {
         DispatcherTimer t1;
-       
+        int tickComer = 0;
+        int tickCagar = 0;
+        int tickDormir = 0;
+        int tickJugar = 0;
+
         int tiempo_vida = 0;
         double decremento = 3.0;
         String nombre;
@@ -75,6 +79,7 @@ namespace PinguGochi {
       
         private void reloj(object sender, EventArgs e)
         {
+            logros(sender, e);
             premios_coleccionables(sender, e);
             puntuacionTiempoVida(sender, e);
             Cambio_colores(sender, e);
@@ -151,6 +156,8 @@ namespace PinguGochi {
             brazoDerecha.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             pez.Visibility = Visibility.Visible;
+
+            tickComer++;
           
         }
 
@@ -206,7 +213,7 @@ namespace PinguGochi {
             pupilaDerecha.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
             pupilaIzquierda.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
 
-            
+            tickDormir++;
 
         }
 
@@ -228,6 +235,7 @@ namespace PinguGochi {
             Storyboard sbLogro = (Storyboard)this.Resources["animacionLogros"];
             sbLogro.Begin();
 
+            tickJugar++;
         }
 
 
@@ -292,6 +300,7 @@ namespace PinguGochi {
             if (prgBar_Alimento.Value % 30 == 0 )
             {
                 im_caca.Visibility = Visibility.Visible;
+                tickCagar++;
             }
         }
 
@@ -408,34 +417,60 @@ namespace PinguGochi {
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroGorro.Visibility = Visibility.Visible;
                 miniGorro.Visibility = Visibility.Visible;
+                Storyboard sb5 = (Storyboard)this.Resources["animacionVive5"];
+                sb5.Begin();
             }
-            else if (tiempo_vida == 15)
+            else if (tiempo_vida == 10)
             {
                 Storyboard sbPiruleta = (Storyboard)this.Resources["animacionPremioPiruleta"];
                 sbPiruleta.Begin();
                 miniPiruleta.Visibility = Visibility.Visible;
                 im_logroPiruleta.Visibility = Visibility.Visible;
                 miniPiruleta.Visibility = Visibility.Visible;
+                Storyboard sb10 = (Storyboard)this.Resources["animacionVive10"];
+                sb10.Begin();
             }
-            else if (tiempo_vida == 20)
+            else if (tiempo_vida == 15)
             {
                 Storyboard sbMascarilla = (Storyboard)this.Resources["animacionPremioMascarilla"];
                 sbMascarilla.Begin();
                 miniMascarilla.Visibility = Visibility.Visible;
                 im_logroMascarilla.Visibility = Visibility.Visible;
                 miniMascarilla.Visibility = Visibility.Visible;
+                Storyboard sb15 = (Storyboard)this.Resources["animacionvive15"];
+                sb15.Begin();
             }
-            else if (tiempo_vida == 23)
+            else if (tiempo_vida == 20)
             {
                 Storyboard sbIglu = (Storyboard)this.Resources["animacionPremioIglu"];
                 sbIglu.Begin();
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroIglu.Visibility = Visibility.Visible;
                 miniIglu.Visibility = Visibility.Visible;
+                Storyboard sb20 = (Storyboard)this.Resources["animacionVive20"];
+                sb20.Begin();
             }
             }
 
-        
+        private void logros(object sender, EventArgs e)
+        {
+            if(tickCagar==3)
+            {
+
+            }else if (tickComer==6)
+            {
+                logroComer.Visibility = Visibility.Visible;
+                
+
+            }
+            else if (tickJugar==6)
+            {
+
+            }else if (tickDormir==6)
+            {
+
+            }
+        }
 
         /// <summary>
         /// Metodos de interaccion con el usuario.
