@@ -232,8 +232,7 @@ namespace PinguGochi {
             bolaBlanca.Visibility = Visibility.Visible;
             bolaClara.Visibility = Visibility.Visible;
             bolaOscura.Visibility = Visibility.Visible;
-            Storyboard sbLogro = (Storyboard)this.Resources["animacionLogros"];
-            sbLogro.Begin();
+           
 
             tickJugar++;
         }
@@ -297,7 +296,7 @@ namespace PinguGochi {
         
         private void cagar(object sender, EventArgs e)
         {
-            if (prgBar_Alimento.Value % 30 == 0 )
+            if (prgBar_Alimento.Value % 10 == 0 )
             {
                 im_caca.Visibility = Visibility.Visible;
                 tickCagar++;
@@ -430,38 +429,41 @@ namespace PinguGochi {
                 Storyboard sb10 = (Storyboard)this.Resources["animacionVive10"];
                 sb10.Begin();
             }
-            else if (tiempo_vida == 15)
+            else if (tiempo_vida == 20)
             {
                 Storyboard sbMascarilla = (Storyboard)this.Resources["animacionPremioMascarilla"];
                 sbMascarilla.Begin();
                 miniMascarilla.Visibility = Visibility.Visible;
                 im_logroMascarilla.Visibility = Visibility.Visible;
                 miniMascarilla.Visibility = Visibility.Visible;
-                Storyboard sb15 = (Storyboard)this.Resources["animacionvive15"];
-                sb15.Begin();
+                Storyboard sb20 = (Storyboard)this.Resources["animacionvive20"];
+                sb20.Begin();
             }
-            else if (tiempo_vida == 20)
+            else if (tiempo_vida == 25)
             {
                 Storyboard sbIglu = (Storyboard)this.Resources["animacionPremioIglu"];
                 sbIglu.Begin();
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroIglu.Visibility = Visibility.Visible;
                 miniIglu.Visibility = Visibility.Visible;
-                Storyboard sb20 = (Storyboard)this.Resources["animacionVive20"];
-                sb20.Begin();
+                Storyboard sb25 = (Storyboard)this.Resources["animacionVive25"];
+                sb25.Begin();
             }
             }
 
         private void logros(object sender, EventArgs e)
         {
-            if(tickCagar==3)
+            if(tickCagar==1)
             {
-
-            }else if (tickComer==6)
+               // Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
+                //sbCaga.Begin();
+            }
+            else if (tickComer==6)
             {
+              
+                Storyboard sbComer = (Storyboard)this.Resources["animacionLogroComer"];
+                sbComer.Begin();
                 logroComer.Visibility = Visibility.Visible;
-                
-
             }
             else if (tickJugar==6)
             {
