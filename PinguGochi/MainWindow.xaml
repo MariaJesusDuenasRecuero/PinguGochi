@@ -168,39 +168,10 @@
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
-        <Storyboard x:Key="animacionVive5">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive5">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.3" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive10">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive20">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive25">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="animacionVive10">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive10">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="animacionvive20">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive20">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="animacionVive25">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="vive25">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-        </Storyboard>
+        <Storyboard x:Key="animacionVive5"/>
+        <Storyboard x:Key="animacionVive10"/>
+        <Storyboard x:Key="animacionvive20"/>
+        <Storyboard x:Key="animacionVive25"/>
         <Storyboard x:Key="animacionLogroComer">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="logroCagar">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
@@ -882,6 +853,7 @@
 
 
 
+
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="FrameworkElement.Loaded">
@@ -889,6 +861,7 @@
             <BeginStoryboard Storyboard="{StaticResource andar}"/>
             <BeginStoryboard Storyboard="{StaticResource andar}"/>
             <BeginStoryboard Storyboard="{StaticResource andarPataDerecha}"/>
+
 
 
 
@@ -1256,10 +1229,10 @@
             <Image x:Name="premioPiruleta" Source="PremioPiruleta.png" Canvas.Left="315" Canvas.Top="33" Visibility="Hidden"/>
             <Image x:Name="premioMascarilla" Source="PremioMascarilla.png" Canvas.Left="311" Canvas.Top="33" Visibility="Hidden"/>
             <Image x:Name="premioIglu" Source="PremioMascarilla.png" Canvas.Left="311" Canvas.Top="33" RenderTransformOrigin="0.452,-0.5" Visibility="Hidden"/>
-            <Label x:Name="vive5" Content="ENHORABUENA HA SOBREVIVIDO 5 SEGUNDOS" Canvas.Left="14" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
-            <Label x:Name="vive10" Content="ENHORABUENA HA SOBREVIVIDO 15 SEGUNDOS" Canvas.Left="25" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
-            <Label x:Name="vive20" Content="ENHORABUENA HA SOBREVIVIDO 20 SEGUNDOS" Canvas.Left="25" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
-            <Label x:Name="vive25" Content="ENHORABUENA HA SOBREVIVIDO 20 SEGUNDOS" Canvas.Left="37" Canvas.Top="454" FontFamily="Verdana" FontWeight="Bold" FontSize="14" Background="#00000000" Foreground="#BFEA1717" Visibility="Hidden"/>
+            <Image x:Name="vive10seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="viviste10seg.png" Visibility="Hidden"/>
+            <Image x:Name="vive20seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="viviste20seg.png" Visibility="Hidden"/>
+            <Image x:Name="vive30seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="vivise30seg.png" Visibility="Hidden"/>
+            <Image x:Name="vive40seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="viviste40seg.png" Visibility="Hidden"/>
         </Canvas>
         <Image Margin="12,-20,20,245" Source="log-tamagochi.png" Stretch="UniformToFill" MinWidth="100" MinHeight="100" Height="209" Width="234" MouseLeftButtonUp="acerca_de" Grid.RowSpan="4" ToolTip="Acerca de...."/>
         <WrapPanel Margin="10,57,10,0" Grid.Row="3" Background="#7FB2E7F0" Grid.Column="3">

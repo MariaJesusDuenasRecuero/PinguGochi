@@ -236,5 +236,17 @@
   <ItemGroup>
     <Resource Include="logroJugar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="viviste10seg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="viviste20seg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vivise30seg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="viviste40seg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

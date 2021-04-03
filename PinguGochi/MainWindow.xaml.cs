@@ -33,7 +33,7 @@ namespace PinguGochi {
         int tickJugar = 0;
 
         int tiempo_vida = 0;
-        double decremento = 3.0;
+        double decremento = 1.0;
         String nombre;
 
 
@@ -128,7 +128,7 @@ namespace PinguGochi {
         /// <param name="e"></param>
         private void btn_Alimentar_Click(object sender, RoutedEventArgs e)
         {
-            this.prgBar_Alimento.Value += 10;
+            this.prgBar_Alimento.Value += 15;
             decremento += 2;
 
             btn_Alimentar.IsEnabled = false;
@@ -323,11 +323,8 @@ namespace PinguGochi {
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
-
-
-
             miniIglu.Visibility = Visibility.Hidden;
-
+            mascarilla.Visibility = Visibility.Visible;
 
         }
 
@@ -339,13 +336,22 @@ namespace PinguGochi {
             switch (aux.Name)
             {
                 case "miniMascarillaPingu":
-                    miniMascarilla.Visibility = Visibility.Visible;
-                   
-                    
+                    miniMascarilla.Visibility = Visibility.Hidden;
+                    mascarilla.Visibility = Visibility.Visible;
+                    miniGorro.Visibility = Visibility.Hidden;
+                    gorro.Visibility = Visibility.Hidden;
+                    auricularesLados.Visibility = Visibility.Visible;
+                    cascoAuricular.Visibility = Visibility.Visible;
+                    iglu.Visibility = Visibility.Hidden;
                     break;
                 case "miniPiruleta":
                     miniPiruleta.Visibility = Visibility.Visible;
                     piruleta.Visibility = Visibility.Visible;
+                    miniGorro.Visibility = Visibility.Hidden;
+                    gorro.Visibility = Visibility.Hidden;
+                    auricularesLados.Visibility = Visibility.Visible;
+                    cascoAuricular.Visibility = Visibility.Visible;
+                    iglu.Visibility = Visibility.Hidden;
                     break;
                 case "miniGorro":
                     miniGorro.Visibility = Visibility.Visible;
@@ -358,6 +364,11 @@ namespace PinguGochi {
                 case "miniIglu":
                     iglu.Visibility = Visibility.Visible;
                     miniIglu.Visibility = Visibility.Visible;
+                    miniGorro.Visibility = Visibility.Hidden;
+                    gorro.Visibility = Visibility.Hidden;
+                    auricularesLados.Visibility = Visibility.Visible;
+                    cascoAuricular.Visibility = Visibility.Visible;
+                    
                     break;
 
             }
@@ -409,45 +420,40 @@ namespace PinguGochi {
 
         private void premios_coleccionables(object sender, EventArgs e)
         {
-            if (tiempo_vida == 5)
+            if (tiempo_vida == 10)
             {
                 Storyboard sbGorro = (Storyboard)this.Resources["animacionPremioGorro"];
                 sbGorro.Begin();
-                miniIglu.Visibility = Visibility.Visible;
                 im_logroGorro.Visibility = Visibility.Visible;
                 miniGorro.Visibility = Visibility.Visible;
-                Storyboard sb5 = (Storyboard)this.Resources["animacionVive5"];
-                sb5.Begin();
+                
             }
-            else if (tiempo_vida == 10)
+            else if (tiempo_vida == 20)
             {
                 Storyboard sbPiruleta = (Storyboard)this.Resources["animacionPremioPiruleta"];
                 sbPiruleta.Begin();
                 miniPiruleta.Visibility = Visibility.Visible;
                 im_logroPiruleta.Visibility = Visibility.Visible;
                 miniPiruleta.Visibility = Visibility.Visible;
-                Storyboard sb10 = (Storyboard)this.Resources["animacionVive10"];
-                sb10.Begin();
+              
             }
-            else if (tiempo_vida == 20)
+            else if (tiempo_vida == 30)
             {
                 Storyboard sbMascarilla = (Storyboard)this.Resources["animacionPremioMascarilla"];
                 sbMascarilla.Begin();
                 miniMascarilla.Visibility = Visibility.Visible;
                 im_logroMascarilla.Visibility = Visibility.Visible;
                 miniMascarilla.Visibility = Visibility.Visible;
-                Storyboard sb20 = (Storyboard)this.Resources["animacionvive20"];
-                sb20.Begin();
+               
             }
-            else if (tiempo_vida == 25)
+            else if (tiempo_vida == 40)
             {
                 Storyboard sbIglu = (Storyboard)this.Resources["animacionPremioIglu"];
                 sbIglu.Begin();
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroIglu.Visibility = Visibility.Visible;
                 miniIglu.Visibility = Visibility.Visible;
-                Storyboard sb25 = (Storyboard)this.Resources["animacionVive25"];
-                sb25.Begin();
+                
             }
             }
 
