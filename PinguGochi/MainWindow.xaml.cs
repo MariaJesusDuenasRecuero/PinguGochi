@@ -54,12 +54,6 @@ namespace PinguGochi {
         }
 
 
-        //---------------------------------------------------------------------------
-
-        
-
-
-        //---------------------------------------------------------------------------
     private void puntuacionTiempoVida(object sender, EventArgs e)
         {
            
@@ -101,8 +95,6 @@ namespace PinguGochi {
                 this.lbl_tiempoVidaP.Visibility = Visibility.Visible;
                 this.lbl_puntuacionJugador.Visibility = Visibility.Visible;
 
-
-
                 im_aburrido.Visibility = Visibility.Hidden;
                 im_conSueño.Visibility = Visibility.Hidden;
                 im_hambriento.Visibility = Visibility.Hidden;
@@ -114,6 +106,10 @@ namespace PinguGochi {
 
                 this.lbl_tiempoVidaP.Content = tiempo_vida;
                 this.lbl_tiempoVidaP.Visibility = Visibility.Visible;
+                this.im_caca.Visibility = Visibility.Hidden;
+                this.im_aburrido.Visibility = Visibility.Hidden;
+                this.im_conSueño.Visibility = Visibility.Hidden;
+                this.im_jugar.Visibility = Visibility.Hidden;
 
 
 
@@ -163,7 +159,7 @@ namespace PinguGochi {
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
         {
-            this.prgB_Cansancio.Value += 10;
+            this.prgB_Cansancio.Value += 15;
             decremento += 2;
 
 
@@ -219,7 +215,7 @@ namespace PinguGochi {
 
         private void btn_divertir_Click(object sender, RoutedEventArgs e)
         {
-            this.prgB_Diversión.Value += 10;
+            this.prgB_Diversión.Value += 15;
             decremento += 2;
 
             btn_divertir.IsEnabled = false;
@@ -232,8 +228,7 @@ namespace PinguGochi {
             bolaBlanca.Visibility = Visibility.Visible;
             bolaClara.Visibility = Visibility.Visible;
             bolaOscura.Visibility = Visibility.Visible;
-           
-
+          
             tickJugar++;
         }
 
@@ -422,7 +417,7 @@ namespace PinguGochi {
         {
             if (tiempo_vida == 10)
             {
-                Storyboard sbGorro = (Storyboard)this.Resources["animacionPremioGorro"];
+                Storyboard sbGorro = (Storyboard)this.Resources["premio10Seg"];
                 sbGorro.Begin();
                 im_logroGorro.Visibility = Visibility.Visible;
                 miniGorro.Visibility = Visibility.Visible;
@@ -430,7 +425,7 @@ namespace PinguGochi {
             }
             else if (tiempo_vida == 20)
             {
-                Storyboard sbPiruleta = (Storyboard)this.Resources["animacionPremioPiruleta"];
+                Storyboard sbPiruleta = (Storyboard)this.Resources["premio20seg"];
                 sbPiruleta.Begin();
                 miniPiruleta.Visibility = Visibility.Visible;
                 im_logroPiruleta.Visibility = Visibility.Visible;
@@ -439,7 +434,7 @@ namespace PinguGochi {
             }
             else if (tiempo_vida == 30)
             {
-                Storyboard sbMascarilla = (Storyboard)this.Resources["animacionPremioMascarilla"];
+                Storyboard sbMascarilla = (Storyboard)this.Resources["premio30seg"];
                 sbMascarilla.Begin();
                 miniMascarilla.Visibility = Visibility.Visible;
                 im_logroMascarilla.Visibility = Visibility.Visible;
@@ -448,7 +443,7 @@ namespace PinguGochi {
             }
             else if (tiempo_vida == 40)
             {
-                Storyboard sbIglu = (Storyboard)this.Resources["animacionPremioIglu"];
+                Storyboard sbIglu = (Storyboard)this.Resources["premio40seg"];
                 sbIglu.Begin();
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroIglu.Visibility = Visibility.Visible;
