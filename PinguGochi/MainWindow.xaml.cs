@@ -73,7 +73,7 @@ namespace PinguGochi {
       
         private void reloj(object sender, EventArgs e)
         {
-            logros(sender, e);
+            //logros(sender, e);
             premios_coleccionables(sender, e);
             puntuacionTiempoVida(sender, e);
             Cambio_colores(sender, e);
@@ -153,7 +153,7 @@ namespace PinguGochi {
             brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             pez.Visibility = Visibility.Visible;
 
-            tickComer++;
+           
           
         }
 
@@ -210,6 +210,12 @@ namespace PinguGochi {
             pupilaIzquierda.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
 
             tickDormir++;
+            if (tickDormir == 3)
+            {
+                Storyboard sbDormir = (Storyboard)this.Resources["animacionLogroDormir"];
+                sbDormir.Begin();
+                logroDormir.Visibility = Visibility.Visible;
+            }
 
         }
 
@@ -274,12 +280,25 @@ namespace PinguGochi {
             onomatopeyaComiendo.Visibility = Visibility.Hidden;
             comerLogo.Visibility = Visibility.Hidden;
             pez.Visibility = Visibility.Hidden;
-
+            tickComer++;
+            if (tickComer == 6)
+            {
+                Storyboard sbComer = (Storyboard)this.Resources["animacionLogroComer"];
+                sbComer.Begin();
+                logroComer.Visibility = Visibility.Visible;
+            }
         }
 
         private void limpiarCaca(object sender, MouseButtonEventArgs e)
         {
             im_caca.Visibility = Visibility.Hidden;
+            tickCagar++;
+            if (tickCagar ==2)
+            {
+                Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
+                sbCaga.Begin();
+                logroCagar.Visibility = Visibility.Visible;
+            }
         }
 
         /// <summary>
@@ -294,7 +313,7 @@ namespace PinguGochi {
             if (prgBar_Alimento.Value % 10 == 0 )
             {
                 im_caca.Visibility = Visibility.Visible;
-                tickCagar++;
+               
             }
         }
 
@@ -452,20 +471,10 @@ namespace PinguGochi {
             }
             }
 
-        private void logros(object sender, EventArgs e)
+       /* private void logros(object sender, EventArgs e)
         {
-            if(tickCagar==1)
-            {
-               Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
-                sbCaga.Begin();
-            }
-            else if (tickComer==6)
-            {
-              
-                Storyboard sbComer = (Storyboard)this.Resources["animacionLogroComer"];
-                sbComer.Begin();
-                logroComer.Visibility = Visibility.Visible;
-            }
+           
+            else 
             else if (tickJugar==3)
             {
 
@@ -474,7 +483,7 @@ namespace PinguGochi {
                 Storyboard sbDormir = (Storyboard)this.Resources["animacionLogroDormir"];
                 sbDormir.Begin();
             }
-        }
+        }*/
 
         /// <summary>
         /// Metodos de interaccion con el usuario.
