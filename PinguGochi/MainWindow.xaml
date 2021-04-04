@@ -1140,7 +1140,7 @@
         <Button x:Name="btn_divertir" Content="Jugar" Grid.Column="2" Margin="10" Grid.Row="2" FontSize="18" FontFamily="Verdana" Click="btn_divertir_Click"/>
         <Label x:Name="lbl_puntuacionJugador" Content="Puntuación:" Grid.Column="1" HorizontalAlignment="Center" Margin="100,276.5,0,0" Grid.Row="4" VerticalAlignment="Center" FontSize="24" FontFamily="Verdana" Grid.RowSpan="2" Visibility="Hidden"/>
         <Label x:Name="lbl_tiempoVidaP" Content="" Grid.Column="1" Margin="269.5,278.5,43.759,4" Grid.Row="4" FontSize="24" Grid.ColumnSpan="2" Grid.RowSpan="2" FontFamily="Verdana" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox x:Name="tbMensaje" TextWrapping="Wrap" Background="{x:Null}" Margin="10,1,10,230" Grid.Column="1" Grid.Row="3" FontSize="24" FontFamily="Forte" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="tbMensaje" TextWrapping="Wrap" Background="{x:Null}" Margin="10,1,10,213" Grid.Column="1" Grid.Row="3" FontSize="24" FontFamily="Forte" Grid.ColumnSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Canvas x:Name="canvas" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" Height="526" Margin="10" Grid.Row="3" Grid.RowSpan="2" VerticalAlignment="Center" Width="465" Background="#0064CFE0" RenderTransformOrigin="0.5,0.5" AllowDrop="True" Drop="colocarColeccionable">
             <Canvas.RenderTransform>
                 <TransformGroup>
@@ -1469,20 +1469,62 @@
             <Image x:Name="vive20seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="viviste20seg.png" Visibility="Hidden"/>
             <Image x:Name="vive30seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="vivise30seg.png" Visibility="Hidden"/>
             <Image x:Name="vive40seg" Height="103" Canvas.Left="10" Canvas.Top="33" Width="271" Source="viviste40seg.png" Visibility="Hidden"/>
+            <Image x:Name="bocadilloComida" Height="112.702" Canvas.Left="1.457" Canvas.Top="120.056" Width="126.781" Source="charla.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.131"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="im_pinguhambientoCanvas" Height="90" Canvas.Left="18.5" Canvas.Top="125" Width="90" Source="pinguHambriento.png" Visibility="Hidden"/>
+            <Image x:Name="bocadillo" Height="113.671" Canvas.Left="326.394" Canvas.Top="161.931" Width="109.305" RenderTransformOrigin="0.463,0.633" Source="burbuja-de-dialogo.png" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.664"/>
+                        <TranslateTransform X="-0.181" Y="-0.051"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="im_pingucansadoCanvas" Height="83" Canvas.Left="339.5" Canvas.Top="172" Width="82" Source="pinguCansado.png" Visibility="Hidden"/>
+            <Image x:Name="bocadilloComida_Copy" Height="112.702" Canvas.Left="1.457" Canvas.Top="235.056" Width="126.781" Source="charla.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-26.232"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="im_pinguaburridoCanvas" Height="90" Canvas.Left="18.5" Canvas.Top="240" Width="90" Source="pinguAburrido.png" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-5.932"/>
+                        <TranslateTransform X="-1.623" Y="0.572"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
         </Canvas>
         <Image Margin="12,-20,20,245" Source="log-tamagochi.png" Stretch="UniformToFill" MinWidth="100" MinHeight="100" Height="209" Width="234" MouseLeftButtonUp="acerca_de" Grid.RowSpan="4" ToolTip="Acerca de...." Cursor="Hand"/>
         <WrapPanel Margin="10,57,10,0" Grid.Row="3" Background="#7FB2E7F0" Grid.Column="3">
-            <Image Height="115.5" Width="133.5" Margin="10" Source="descarga.jpg" MouseUp="cambiarFondo" ToolTip="¡Pulsa para cambiar el fondo!" Cursor="Hand"/>
-            <Image x:Name="miniGorro" Height="82" Width="82" Source="sombrero-de-invierno.png" MouseLeftButtonDown="arrastrarMascarilla" Visibility="Hidden"/>
-            <Image x:Name="miniPiruleta" Height="40" Width="64" Source="piruletas.png" MouseLeftButtonDown="arrastrarMascarilla" Margin="10,10,10,5" Visibility="Hidden"/>
-            <Image x:Name="miniMascarilla" Height="68" Width="65" Source="mascarilla-medica.png" MouseLeftButtonDown="arrastrarMascarilla" Visibility="Hidden"/>
-            <Image x:Name="miniIglu" Height="70" Width="70" Source="iglu.png" MouseLeftButtonDown="arrastrarMascarilla" Margin="5,0,0,0" Visibility="Hidden"/>
+            <Image Margin="10,0,10,10" Source="descarga.jpg" MouseUp="cambiarFondo" ToolTip="¡Pulsa para cambiar el fondo!" Cursor="Hand" Height="91" Width="130"/>
+            <Image x:Name="miniGorro" Source="sombrero-de-invierno.png" MouseLeftButtonDown="arrastrarMascarilla" MinWidth="50" MinHeight="50" Width="50" Visibility="Hidden"/>
+            <Image x:Name="miniPiruleta" Source="piruletas.png" MouseLeftButtonDown="arrastrarMascarilla" Margin="10,10,10,5" RenderTransformOrigin="0.564,-0.639" Width="50" Visibility="Hidden"/>
+            <Image x:Name="miniMascarilla" Source="mascarilla-medica.png" MouseLeftButtonDown="arrastrarMascarilla" Margin="10,10,10,5" Width="50" Visibility="Hidden"/>
+            <Image x:Name="miniIglu" Source="iglu.png" MouseLeftButtonDown="arrastrarMascarilla" Margin="5,0,0,0" Width="50" Visibility="Hidden"/>
         </WrapPanel>
         <StackPanel Margin="10,70,11,0" Grid.Row="4" Background="#3FD9F3F8" Grid.Column="3"/>
         <Label x:Name="lbl_GameOver" Content="GAME OVER" Grid.Column="1" Margin="94.5,225.5,107.759,1.5" Grid.Row="4" FontSize="36" FontFamily="MineCrafter 3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Content="Logros" Margin="28,20,0,205" Grid.Row="3" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
+        <Label Content="Logros" Margin="28,20,0,187" Grid.Row="3" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
         <Label Content="Premios" Margin="28,26,111,210" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
-        <Label Content="Ranking" Margin="10,26,130,212" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
+        <Label Content="Ranking" Margin="10,26,130,210" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
         <Image Margin="189,9.261,14,203.261" Grid.Row="3" Source="insignia.png" RenderTransformOrigin="0.325,1.375" Height="50" VerticalAlignment="Top"/>
         <Image Margin="199,9.761,8,203.761" Grid.Row="4" Source="exito.png" Height="50" VerticalAlignment="Top"/>
         <Image Margin="196,18.761,15,208.761" Grid.Row="4" Source="top-three.png" Grid.Column="3" Height="50" VerticalAlignment="Top"/>
@@ -1501,10 +1543,10 @@
             <Image x:Name="logroDormirmini" Height="78" Source="logroDormirMini.png" Visibility="Hidden"/>
         </StackPanel>
         <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2">
-            <Image x:Name="im_logroGorro" Source="PremioGorro.png" Margin="25,20,10,10" Height="75" Width="75" Visibility="Hidden"/>
-            <Image x:Name="im_logroPiruleta" Source="PremioPiruleta.png" Margin="10" Height="75" Width="75" Visibility="Hidden"/>
-            <Image x:Name="im_logroMascarilla" Source="PremioMascarilla.png" Margin="25,0,10,10" Height="75" Width="75" Visibility="Hidden"/>
-            <Image x:Name="im_logroIglu" Source="PremioMascarilla.png" Margin="10,0,25,25" Height="75" Width="75" Visibility="Hidden"/>
+            <Image x:Name="im_logroGorro" Source="PremioGorro.png" Margin="25,20,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 10 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroPiruleta" Source="PremioPiruleta.png" Margin="10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 20 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroMascarilla" Source="PremioMascarilla.png" Margin="25,0,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 30 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroIglu" Source="PremioMascarilla.png" Margin="10,0,25,25" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 40 seg" Visibility="Hidden"/>
         </WrapPanel>
         <Label x:Name="lbl_cuidado" Content="¡CUIDADO!" Grid.Column="3" HorizontalAlignment="Center" Margin="17,16,2,36" VerticalAlignment="Center" FontFamily="Verdana" FontSize="36" FontWeight="Bold" Foreground="#FFEE0C0C" Width="246" Height="61" Grid.RowSpan="2" Visibility="Hidden"/>
         <Label Content="Coleccionables" Margin="0,10,19,213" Grid.Row="3" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>

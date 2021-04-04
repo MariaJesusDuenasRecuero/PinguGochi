@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -20,7 +18,8 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 
 
-namespace PinguGochi {
+namespace PinguGochi
+{
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
@@ -50,18 +49,18 @@ namespace PinguGochi {
             t1.Tick += new EventHandler(reloj);
             this.lbl_tiempoVidaP.Visibility = Visibility.Hidden;
             t1.Start();
-           
+
         }
 
 
-    private void puntuacionTiempoVida(object sender, EventArgs e)
+        private void puntuacionTiempoVida(object sender, EventArgs e)
         {
-           
+
             if (prgBar_Alimento.Value < 100 || prgB_Cansancio.Value < 100 || prgB_Diversión.Value < 100)
             {
                 tiempo_vida++;
                 lbl_tiempoVidaP.Content = tiempo_vida;
-                
+
 
 
             }
@@ -70,14 +69,14 @@ namespace PinguGochi {
         /// <summary>
         /// crear evento
         /// </summary>
-      
+
         private void reloj(object sender, EventArgs e)
         {
             //logros(sender, e);
             premios_coleccionables(sender, e);
             puntuacionTiempoVida(sender, e);
             Cambio_colores(sender, e);
-            cagar(sender, e); 
+            cagar(sender, e);
 
 
             this.prgBar_Alimento.Value -= decremento;
@@ -128,7 +127,7 @@ namespace PinguGochi {
             decremento += 2;
 
             btn_Alimentar.IsEnabled = false;
-           
+
 
             comerLogo.Visibility = Visibility.Visible;
 
@@ -153,8 +152,8 @@ namespace PinguGochi {
             brazoIzq.BeginAnimation(Ellipse.HeightProperty, comerBracitoMoviendo);
             pez.Visibility = Visibility.Visible;
 
-           
-          
+
+
         }
 
         private void btn_Descansar_Click(object sender, RoutedEventArgs e)
@@ -164,7 +163,7 @@ namespace PinguGochi {
 
 
             btn_Descansar.IsEnabled = false;
-           
+
 
             pataDerechaOso.Visibility = Visibility.Visible;
             cuerpoOso.Visibility = Visibility.Visible;
@@ -225,7 +224,7 @@ namespace PinguGochi {
             decremento += 2;
 
             btn_divertir.IsEnabled = false;
-            
+
             Storyboard sbJugar = (Storyboard)this.Resources["animacionJugar"];
             sbJugar.Begin();
             Storyboard sbBailar = (Storyboard)this.Resources["animacionBailarIcon"];
@@ -234,9 +233,9 @@ namespace PinguGochi {
             bolaBlanca.Visibility = Visibility.Visible;
             bolaClara.Visibility = Visibility.Visible;
             bolaOscura.Visibility = Visibility.Visible;
-          
+
             tickJugar++;
-            if (tickJugar == 3)
+            if (tickJugar == 5)
             {
                 Storyboard sbJugaar = (Storyboard)this.Resources["animacionLogroJugar"];
                 sbJugaar.Begin();
@@ -276,13 +275,13 @@ namespace PinguGochi {
             cascoAuricular.Visibility = Visibility.Visible;
             auricularesLados.Visibility = Visibility.Visible;
 
-            
+
         }
 
         private void finComer(object sender, EventArgs e)
         {
             btn_Alimentar.IsEnabled = true;
-           
+
 
             onomatopeyaComiendo.Visibility = Visibility.Hidden;
             comerLogo.Visibility = Visibility.Hidden;
@@ -300,7 +299,7 @@ namespace PinguGochi {
         {
             im_caca.Visibility = Visibility.Hidden;
             tickCagar++;
-            if (tickCagar ==2)
+            if (tickCagar == 2)
             {
                 Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
                 sbCaga.Begin();
@@ -314,24 +313,24 @@ namespace PinguGochi {
         /// <param name="sender"></param>
         /// <param name="e"></param>
 
-        
+
         private void cagar(object sender, EventArgs e)
         {
-            if (prgBar_Alimento.Value % 10 == 0 )
+            if (prgBar_Alimento.Value % 10 == 0)
             {
                 im_caca.Visibility = Visibility.Visible;
-               
+
             }
         }
 
 
 
-      
-       /// <summary>
-       /// Cambiar fondo
-       /// </summary>
-       /// <param name="sender"></param>
-       /// <param name="e"></param>
+
+        /// <summary>
+        /// Cambiar fondo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void cambiarFondo(object sender, MouseButtonEventArgs e)
         {
@@ -344,6 +343,7 @@ namespace PinguGochi {
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
+            mascarilla.Visibility = Visibility.Visible;
         }
 
         private void colocarColeccionable(object sender, DragEventArgs e)
@@ -354,7 +354,7 @@ namespace PinguGochi {
             switch (aux.Name)
             {
                 case "miniMascarillaPingu":
-                    miniMascarilla.Visibility = Visibility.Hidden;
+                    miniMascarilla.Visibility = Visibility.Visible;
                     mascarilla.Visibility = Visibility.Visible;
                     miniGorro.Visibility = Visibility.Hidden;
                     gorro.Visibility = Visibility.Hidden;
@@ -365,11 +365,12 @@ namespace PinguGochi {
                 case "miniPiruleta":
                     miniPiruleta.Visibility = Visibility.Visible;
                     piruleta.Visibility = Visibility.Visible;
-                    miniGorro.Visibility = Visibility.Hidden;
+                    miniGorro.Visibility = Visibility.Visible;
                     gorro.Visibility = Visibility.Hidden;
                     auricularesLados.Visibility = Visibility.Visible;
                     cascoAuricular.Visibility = Visibility.Visible;
                     iglu.Visibility = Visibility.Hidden;
+                    mascarilla.Visibility = Visibility.Hidden;
                     break;
                 case "miniGorro":
                     miniGorro.Visibility = Visibility.Visible;
@@ -377,16 +378,17 @@ namespace PinguGochi {
                     auricularesLados.Visibility = Visibility.Hidden;
                     cascoAuricular.Visibility = Visibility.Hidden;
                     iglu.Visibility = Visibility.Hidden;
+                    mascarilla.Visibility = Visibility.Hidden;
                    
                     break;
                 case "miniIglu":
                     iglu.Visibility = Visibility.Visible;
                     miniIglu.Visibility = Visibility.Visible;
-                    miniGorro.Visibility = Visibility.Hidden;
+                    miniGorro.Visibility = Visibility.Visible;
                     gorro.Visibility = Visibility.Hidden;
                     auricularesLados.Visibility = Visibility.Visible;
                     cascoAuricular.Visibility = Visibility.Visible;
-                    
+
                     break;
 
             }
@@ -402,7 +404,7 @@ namespace PinguGochi {
         /// <param name="e"></param>
         private void Cambio_colores(object sender, EventArgs e)
         {
-          
+
             if ((prgBar_Alimento.Value <= 50 && prgBar_Alimento.Value > 25) || (prgB_Cansancio.Value <= 50 && prgB_Cansancio.Value > 25) || (prgB_Diversión.Value <= 50 && prgB_Diversión.Value > 25))
             {
                 prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Yellow);
@@ -444,7 +446,7 @@ namespace PinguGochi {
                 sbGorro.Begin();
                 im_logroGorro.Visibility = Visibility.Visible;
                 miniGorro.Visibility = Visibility.Visible;
-                
+
             }
             else if (tiempo_vida == 20)
             {
@@ -453,7 +455,7 @@ namespace PinguGochi {
                 miniPiruleta.Visibility = Visibility.Visible;
                 im_logroPiruleta.Visibility = Visibility.Visible;
                 miniPiruleta.Visibility = Visibility.Visible;
-              
+
             }
             else if (tiempo_vida == 30)
             {
@@ -462,7 +464,7 @@ namespace PinguGochi {
                 miniMascarilla.Visibility = Visibility.Visible;
                 im_logroMascarilla.Visibility = Visibility.Visible;
                 miniMascarilla.Visibility = Visibility.Visible;
-               
+
             }
             else if (tiempo_vida == 40)
             {
@@ -471,11 +473,11 @@ namespace PinguGochi {
                 miniIglu.Visibility = Visibility.Visible;
                 im_logroIglu.Visibility = Visibility.Visible;
                 miniIglu.Visibility = Visibility.Visible;
-                
-            }
-            }
 
-      
+            }
+        }
+
+
 
         /// <summary>
         /// Metodos de interaccion con el usuario.
@@ -484,7 +486,7 @@ namespace PinguGochi {
         /// <param name="e"></param>
         private void acerca_de(object sender, MouseButtonEventArgs e)
         {
-           MessageBoxResult resultadoAcercaDe= MessageBox.Show("Programa realizado por: \n \n María Jesús Dueñas \n \n ¿Desea salir? ","Acerca de",MessageBoxButton.YesNo);
+            MessageBoxResult resultadoAcercaDe = MessageBox.Show("Programa realizado por: \n \n María Jesús Dueñas \n \n ¿Desea salir? ", "Acerca de", MessageBoxButton.YesNo);
 
             switch (resultadoAcercaDe)
             {
@@ -493,16 +495,15 @@ namespace PinguGochi {
                     break;
             }
         }
-         public void setNombre(string nombre)
+        public void setNombre(string nombre)
         {
             this.nombre = nombre;
             tbMensaje.Text = "Bienvenido/a " + nombre;
-            
+
 
         }
 
-        
-        
+
+
     }
 }
-

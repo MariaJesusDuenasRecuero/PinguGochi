@@ -251,5 +251,11 @@
   <ItemGroup>
     <Resource Include="premioIglu.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="charla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="burbuja-de-dialogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
