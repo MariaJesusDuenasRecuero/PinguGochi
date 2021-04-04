@@ -236,6 +236,13 @@ namespace PinguGochi {
             bolaOscura.Visibility = Visibility.Visible;
           
             tickJugar++;
+            if (tickJugar == 3)
+            {
+                Storyboard sbJugaar = (Storyboard)this.Resources["animacionLogroJugar"];
+                sbJugaar.Begin();
+                logroJugar.Visibility = Visibility.Visible;
+
+            }
         }
 
 
@@ -336,9 +343,6 @@ namespace PinguGochi {
         {
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
-
-            miniIglu.Visibility = Visibility.Hidden;
-            mascarilla.Visibility = Visibility.Visible;
 
         }
 
@@ -471,19 +475,7 @@ namespace PinguGochi {
             }
             }
 
-       /* private void logros(object sender, EventArgs e)
-        {
-           
-            else 
-            else if (tickJugar==3)
-            {
-
-            }else if (tickDormir==3)
-            {
-                Storyboard sbDormir = (Storyboard)this.Resources["animacionLogroDormir"];
-                sbDormir.Begin();
-            }
-        }*/
+      
 
         /// <summary>
         /// Metodos de interaccion con el usuario.
