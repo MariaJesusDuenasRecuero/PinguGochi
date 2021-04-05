@@ -168,10 +168,7 @@
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
-        <Storyboard x:Key="animacionVive5"/>
-        <Storyboard x:Key="animacionVive10"/>
-        <Storyboard x:Key="animacionvive20"/>
-        <Storyboard x:Key="animacionVive25"/>
+
         <Storyboard x:Key="animacionLogroComer">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="logroCagar">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
@@ -380,252 +377,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="13"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="13"/>
             </DoubleAnimationUsingKeyFrames>
-        </Storyboard>
-        <Storyboard x:Key="animacionLogroDormir">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaClara">
-                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.1" Value="{x:Static Visibility.Visible}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaOscura">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.1" Value="{x:Static Visibility.Visible}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaBlanca">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.1" Value="{x:Static Visibility.Visible}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="-143"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-102"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="-67"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="-45"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-21"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="-5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="-5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="-143"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-102"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="-67"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="-45"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-21"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="-5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="-5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="-159"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="-143"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-102"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="-67"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="-45"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-21"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="-5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="-5"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="-3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="-3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-5"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="-3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="-4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.1" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.5" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="tituloLogroDormir">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="tituloLogroDormir">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="Two mimir"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.2" Value="Two mimir"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="Two mimir"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7" Value="Two mimir"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontFamily)" Storyboard.TargetName="tituloLogroDormir">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4">
-                    <DiscreteObjectKeyFrame.Value>
-                        <FontFamily>Verdana</FontFamily>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.2">
-                    <DiscreteObjectKeyFrame.Value>
-                        <FontFamily>Verdana</FontFamily>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.4">
-                    <DiscreteObjectKeyFrame.Value>
-                        <FontFamily>Segoe UI</FontFamily>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7">
-                    <DiscreteObjectKeyFrame.Value>
-                        <FontFamily>Verdana</FontFamily>
-                    </DiscreteObjectKeyFrame.Value>
-                </DiscreteObjectKeyFrame>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="tituloLogroDormir">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="12"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="12"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="12"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="12"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="tituloLogroDormir">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="10"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="10"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="10"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="10"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="logroDormir">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:2.7" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="logroDormir">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="16"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="16"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="16"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="16"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="logroDormir">
-                <EasingDoubleKeyFrame KeyTime="0:0:1.4" Value="7"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="7"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="7"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2.7" Value="7"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="443"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.2" Value="400"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="300"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="250"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.8" Value="200"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="150"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.8" Value="100"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.5" Value="100"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="400"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="logroDormirmini">
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.8" Value="{x:Static Visibility.Visible}"/>
-            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
         <Storyboard x:Key="premio10Seg">
@@ -875,94 +626,70 @@
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.3" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:9.4" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:10.1" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:11" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7.6" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaClara">
-                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaClara">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="130"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaClara">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.6" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaOscura">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.3" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:9.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.4" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaOscura">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.8" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaOscura">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="130"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="130"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.3" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.6" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaBlanca">
-                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="80"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.6" Value="0"/>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaOscura">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.3" Value="0"/>
             </DoubleAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaBlanca">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
@@ -970,120 +697,367 @@
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.3" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Hidden}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:9.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaBlanca">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaBlanca">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaClara">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-139"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="-106"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="-57"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="-57"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="-113"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="-64"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="-16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="-8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.6" Value="-8"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaOscura">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-139"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="-106"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="-57"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="-57"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="-113"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="-64"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="-16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="-8"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaBlanca">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-166"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-139"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="-106"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="-57"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="-57"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="-163"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="-113"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="-64"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="-16"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="-8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="-8"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaClara">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="3"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="-2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.6" Value="-2"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaOscura">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="-2"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaBlanca">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="-1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:10.1" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="-2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="-2"/>
             </DoubleAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
-                <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:6.8" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.4" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="logroJugar">
-                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:4.9" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="logroJugar">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.9" Value="4"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="9"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="9"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="9"/>
             </DoubleAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="logroJugar">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="8"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:4.9" Value="8"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.2" Value="8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="8"/>
             </DoubleAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
-                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:4.9" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="tituloLogroJugar">
-                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Shake your body!"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:4.9" Value="Shake your body!"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="Shake your body!"/>
-            </ObjectAnimationUsingKeyFrames>
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="tituloLogroJugar">
                 <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:4.9" Value="{x:Static Visibility.Visible}"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:5.2" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="tituloLogroJugar">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Shake ypur body!"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.5" Value="Shake ypur body!"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="Shake ypur body!"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.8" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
-                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="443"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:5.2" Value="400"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:6.8" Value="300"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="200"/>
-                <EasingDoubleKeyFrame KeyTime="0:0:9.4" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.8" Value="443"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.2" Value="350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.7" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.4" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.4" Value="50"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="bolaBlanca">
+                <EasingPointKeyFrame KeyTime="0:0:4.2" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="0:0:4.7" Value="0.552,0.488"/>
+                <EasingPointKeyFrame KeyTime="0:0:5.4" Value="0.552,0.488"/>
+                <EasingPointKeyFrame KeyTime="0:0:6.4" Value="0.552,0.488"/>
+                <EasingPointKeyFrame KeyTime="0:0:7" Value="0.552,0.488"/>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animacionLogroDormir">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaClara">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:8.6" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaClara">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaClara">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaOscura">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:8.2" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaOscura">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaOscura">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="130"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="bolaBlanca">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="bolaBlanca">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="80"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="bolaBlanca">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaClara">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-167"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="-143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="-65"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="-4"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaOscura">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-167"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="-143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="-65"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.2" Value="-4"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="bolaBlanca">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="-167"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-167"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="-143"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="-65"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.9" Value="-4"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaClara">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaOscura">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.2" Value="3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="bolaBlanca">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.9" Value="3"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:5.5" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:6.6" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="label">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="logroDormir">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="tituloLogroDormir">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="logroDormir">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="4"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="logroDormir">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="9"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(ContentControl.Content)" Storyboard.TargetName="tituloLogroDormir">
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="Two mimir"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="Two mimir"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="tituloLogroDormir">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="22"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="tituloLogroDormir">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="13"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="13"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="443"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.6" Value="350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.6" Value="250"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5.5" Value="100"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+
 
 
 
@@ -1501,6 +1475,7 @@
         <StackPanel Margin="12,65,10,0" Grid.Row="3" Background="#3FD9F3F8">
             <Image x:Name="logroCagar" Height="78" Source="logroCagarMini.png" Visibility="Hidden"/>
             <Image x:Name="logroComer" Height="78" Source="logrocomermini.png" Visibility="Hidden"/>
+            <Image x:Name="logroJugarMini" Height="74" Margin="27,0,15.477,0" Source="logroJugarMini.png" Visibility="Hidden"/>
             <Image x:Name="logroDormirmini" Height="78" Source="logroDormirMini.png" Visibility="Hidden"/>
         </StackPanel>
         <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2">

@@ -111,6 +111,13 @@ namespace PinguGochi
                 this.im_jugar.Visibility = Visibility.Hidden;
 
 
+                this.bocadilloAburrido.Visibility = Visibility.Hidden;
+                this.bocadilloCansado.Visibility = Visibility.Hidden;
+                this.bocadilloHambriento.Visibility = Visibility.Hidden;
+
+                
+
+
 
 
 
@@ -239,7 +246,7 @@ namespace PinguGochi
             {
                 Storyboard sbJugaar = (Storyboard)this.Resources["animacionLogroJugar"];
                 sbJugaar.Begin();
-                logroJugar.Visibility = Visibility.Visible;
+                logroJugarMini.Visibility = Visibility.Visible;
 
             }
         }
