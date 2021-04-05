@@ -343,7 +343,7 @@ namespace PinguGochi
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
-            mascarilla.Visibility = Visibility.Visible;
+            //mascarilla.Visibility = Visibility.Visible;
         }
 
         private void colocarColeccionable(object sender, DragEventArgs e)
@@ -353,14 +353,15 @@ namespace PinguGochi
 
             switch (aux.Name)
             {
-                case "miniMascarillaPingu":
+                case "miniMascarilla":
                     miniMascarilla.Visibility = Visibility.Visible;
                     mascarilla.Visibility = Visibility.Visible;
-                    miniGorro.Visibility = Visibility.Hidden;
+                    miniGorro.Visibility = Visibility.Visible;
                     gorro.Visibility = Visibility.Hidden;
                     auricularesLados.Visibility = Visibility.Visible;
                     cascoAuricular.Visibility = Visibility.Visible;
-                    iglu.Visibility = Visibility.Hidden;
+                    miniPiruleta.Visibility = Visibility.Visible;
+                    piruleta.Visibility = Visibility.Hidden;
                     break;
                 case "miniPiruleta":
                     miniPiruleta.Visibility = Visibility.Visible;
@@ -387,8 +388,7 @@ namespace PinguGochi
                     miniGorro.Visibility = Visibility.Visible;
                     gorro.Visibility = Visibility.Hidden;
                     auricularesLados.Visibility = Visibility.Visible;
-                    cascoAuricular.Visibility = Visibility.Visible;
-
+                    cascoAuricular.Visibility = Visibility.Visible; 
                     break;
 
             }
@@ -414,16 +414,19 @@ namespace PinguGochi
                 im_conSueño.Visibility = Visibility.Hidden;
                 im_hambriento.Visibility = Visibility.Hidden;
                 lbl_cuidado.Visibility = Visibility.Hidden;
+                bocadilloAburrido.Visibility = Visibility.Hidden;
+                bocadilloCansado.Visibility = Visibility.Hidden;
+                bocadilloHambriento.Visibility = Visibility.Hidden;
             }
             else if ((prgBar_Alimento.Value <= 25 && prgBar_Alimento.Value > 15) || (prgB_Cansancio.Value <= 25 && prgB_Cansancio.Value > 15) || (prgB_Diversión.Value <= 25 && prgB_Diversión.Value > 15))
             {
                 prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Orange);
                 prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Orange);
                 prgB_Diversión.Foreground = new SolidColorBrush(Colors.Orange);
-                im_aburrido.Visibility = Visibility.Visible;
-                im_conSueño.Visibility = Visibility.Visible;
-                im_hambriento.Visibility = Visibility.Visible;
-                lbl_cuidado.Visibility = Visibility.Visible;
+                bocadilloAburrido.Visibility = Visibility.Visible;
+                bocadilloCansado.Visibility = Visibility.Visible;
+                bocadilloHambriento.Visibility = Visibility.Visible;
+                
             }
             else if (prgBar_Alimento.Value <= 15 || prgB_Cansancio.Value <= 15 || prgB_Diversión.Value <= 15)
             {

@@ -257,5 +257,14 @@
   <ItemGroup>
     <Resource Include="burbuja-de-dialogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bocadilloCansado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bocadilloHambriento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bocadilloAburrido.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
