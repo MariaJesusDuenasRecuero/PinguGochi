@@ -30,7 +30,7 @@ namespace PinguGochi
         int tickCagar = 0;
         int tickDormir = 0;
         int tickJugar = 0;
-
+        
         int tiempo_vida = 0;
         double decremento = 1.0;
         String nombre;
@@ -105,10 +105,11 @@ namespace PinguGochi
 
                 this.lbl_tiempoVidaP.Content = tiempo_vida;
                 this.lbl_tiempoVidaP.Visibility = Visibility.Visible;
-                this.im_caca.Visibility = Visibility.Hidden;
+                this.im_caca1.Visibility = Visibility.Hidden;
+                this.im_caca2.Visibility = Visibility.Hidden;
                 this.im_aburrido.Visibility = Visibility.Hidden;
                 this.im_conSueño.Visibility = Visibility.Hidden;
-                this.im_jugar.Visibility = Visibility.Hidden;
+                this.jugarLogo.Visibility = Visibility.Hidden;
 
 
                 this.bocadilloAburrido.Visibility = Visibility.Hidden;
@@ -116,6 +117,10 @@ namespace PinguGochi
                 this.bocadilloHambriento.Visibility = Visibility.Hidden;
 
                 
+                this.comerLogo.Visibility = Visibility.Hidden;
+                this.dormirLogo.Visibility = Visibility.Hidden;
+                this.jugarLogo.Visibility = Visibility.Hidden;
+
 
 
 
@@ -230,6 +235,7 @@ namespace PinguGochi
             this.prgB_Diversión.Value += 15;
             decremento += 2;
 
+            
             btn_divertir.IsEnabled = false;
 
             Storyboard sbJugar = (Storyboard)this.Resources["animacionJugar"];
@@ -237,9 +243,9 @@ namespace PinguGochi
             Storyboard sbBailar = (Storyboard)this.Resources["animacionBailarIcon"];
             sbBailar.Begin();
             btn_divertir.IsEnabled = true;
-            bolaBlanca.Visibility = Visibility.Visible;
-            bolaClara.Visibility = Visibility.Visible;
-            bolaOscura.Visibility = Visibility.Visible;
+           // bolaBlanca.Visibility = Visibility.Visible;
+           // bolaClara.Visibility = Visibility.Visible;
+           // bolaOscura.Visibility = Visibility.Visible;
 
             tickJugar++;
             if (tickJugar == 5)
@@ -250,14 +256,6 @@ namespace PinguGochi
 
             }
         }
-
-
-
-        /// <summary>
-        /// Fin de animaciones
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
 
 
         private void finCerrarOjoDer(object sender, EventArgs e)
@@ -304,8 +302,10 @@ namespace PinguGochi
 
         private void limpiarCaca(object sender, MouseButtonEventArgs e)
         {
-            im_caca.Visibility = Visibility.Hidden;
+            
             tickCagar++;
+            im_caca1.Visibility = Visibility.Hidden;
+            im_caca2.Visibility = Visibility.Hidden;
             if (tickCagar == 2)
             {
                 Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
@@ -314,30 +314,40 @@ namespace PinguGochi
             }
         }
 
-        /// <summary>
-        /// animaciones con el tiempo
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
+        
 
         private void cagar(object sender, EventArgs e)
         {
-            if (prgBar_Alimento.Value % 10 == 0)
+            if (prgBar_Alimento.Value % 15== 0)
             {
-                im_caca.Visibility = Visibility.Visible;
+                Random rdn = new Random();
+                int random = rdn.Next(1, 4);
+
+                switch (random)
+                {
+                    case 1:
+                        im_caca1.Visibility = Visibility.Visible;
+                        im_caca2.Visibility = Visibility.Hidden;
+                        break;
+                    case 2:
+                        im_caca2.Visibility = Visibility.Visible;
+                        im_caca1.Visibility = Visibility.Hidden;
+                        break;
+                    case 3:
+                        im_caca1.Visibility = Visibility.Visible;
+                        im_caca2.Visibility = Visibility.Hidden;
+                        break;
+                    case 4:
+                        im_caca2.Visibility = Visibility.Visible;
+                        im_caca1.Visibility = Visibility.Hidden;
+                        break;
+
+                }
 
             }
+            
         }
 
-
-
-
-        /// <summary>
-        /// Cambiar fondo
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
 
         private void cambiarFondo(object sender, MouseButtonEventArgs e)
         {
@@ -401,14 +411,6 @@ namespace PinguGochi
             }
         }
 
-
-
-
-        /// <summary>
-        /// Metodo para cambiar de color las barras de progreso
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void Cambio_colores(object sender, EventArgs e)
         {
 
@@ -488,12 +490,6 @@ namespace PinguGochi
         }
 
 
-
-        /// <summary>
-        /// Metodos de interaccion con el usuario.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void acerca_de(object sender, MouseButtonEventArgs e)
         {
             MessageBoxResult resultadoAcercaDe = MessageBox.Show("Programa realizado por: \n \n María Jesús Dueñas \n \n ¿Desea salir? ", "Acerca de", MessageBoxButton.YesNo);
@@ -512,7 +508,6 @@ namespace PinguGochi
 
 
         }
-
 
 
     }

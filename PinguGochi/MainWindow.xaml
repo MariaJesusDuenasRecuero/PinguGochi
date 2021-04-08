@@ -136,7 +136,7 @@
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="animacionBailarIcon">
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="im_jugar">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="jugarLogo">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:1.2" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
@@ -1423,7 +1423,7 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="im_caca" Height="69" Canvas.Left="348" Canvas.Top="406" Width="71" Source="mierda.png" MouseLeftButtonUp="limpiarCaca" Visibility="Hidden" ToolTip="¡Toca para limpiar!" Cursor="Hand"/>
+            <Image x:Name="im_caca1" Height="69" Canvas.Left="375" Canvas.Top="363" Width="71" Source="mierda.png" MouseLeftButtonUp="limpiarCaca" ToolTip="¡Toca para limpiar!" Cursor="Hand" Visibility="Hidden"/>
             <Ellipse x:Name="brazoIzq" Fill="#FF393940" HorizontalAlignment="Left" Height="26.589" Stroke="Black" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.5,0.5" Canvas.Left="145" Canvas.Top="298.813">
                 <Ellipse.RenderTransform>
                     <TransformGroup>
@@ -1446,6 +1446,7 @@
             <Image x:Name="bocadilloCansado" Height="138" Canvas.Left="5" Canvas.Top="127" Width="132" Source="bocadilloCansado.png" Visibility="Hidden"/>
             <Image x:Name="bocadilloHambriento" Height="147" Canvas.Left="316" Canvas.Top="199" Width="139" Source="bocadilloHambriento.png" Visibility="Hidden"/>
             <Image x:Name="bocadilloAburrido" Height="147" Canvas.Top="285" Width="139" Source="bocadilloAburrido.png" Visibility="Hidden"/>
+            <Image x:Name="im_caca2" Height="69" Canvas.Left="18" Canvas.Top="363" Width="71" Source="mierda.png" MouseLeftButtonUp="limpiarCaca" ToolTip="¡Toca para limpiar!" Cursor="Hand" Visibility="Hidden"/>
         </Canvas>
         <Image Margin="12,-20,20,245" Source="log-tamagochi.png" Stretch="UniformToFill" MinWidth="100" MinHeight="100" Height="209" Width="234" MouseLeftButtonUp="acerca_de" Grid.RowSpan="4" ToolTip="Acerca de...." Cursor="Hand"/>
         <WrapPanel Margin="10,57,10,0" Grid.Row="3" Background="#7FB2E7F0" Grid.Column="3" Cursor="None">
@@ -1459,13 +1460,13 @@
         <Label x:Name="lbl_GameOver" Content="GAME OVER" Grid.Column="1" Margin="94.5,225.5,107.759,1.5" Grid.Row="4" FontSize="36" FontFamily="MineCrafter 3" Grid.ColumnSpan="2" Visibility="Hidden" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Content="Logros" Margin="28,20,0,187" Grid.Row="3" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
         <Label Content="Premios" Margin="28,26,111,210" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold"/>
-        <Label Content="Ranking" Margin="10,26,130,210" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
-        <Image Margin="189,9.261,14,203.261" Grid.Row="3" Source="insignia.png" RenderTransformOrigin="0.325,1.375" VerticalAlignment="Top"/>
-        <Image Margin="199,9.761,8,203.761" Grid.Row="4" Source="exito.png" VerticalAlignment="Top"/>
-        <Image Margin="196,18.761,15,208.761" Grid.Row="4" Source="top-three.png" Grid.Column="3" VerticalAlignment="Top"/>
-        <Image Margin="194.738,1.999,15.738,206.999" Grid.Row="3" Source="coleccionar-monedas.png" Grid.Column="3" VerticalAlignment="Top"/>
+        <Label Content="Ranking" Margin="10,26,130,188" Grid.Row="4" FontSize="24" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
+        <Image Margin="189,9.261,14,203.261" Grid.Row="3" Source="insignia.png" RenderTransformOrigin="0.325,1.375" Width="52" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image Margin="199,9.761,8,203.761" Grid.Row="4" Source="exito.png" Width="52" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Image Margin="196,18.761,15,208.761" Grid.Row="4" Source="top-three.png" Grid.Column="3" VerticalAlignment="Bottom" Width="53" HorizontalAlignment="Right"/>
+        <Image Margin="194.738,1.999,15.738,206.999" Grid.Row="3" Source="coleccionar-monedas.png" Grid.Column="3" VerticalAlignment="Bottom" Width="52" HorizontalAlignment="Right"/>
         <Image x:Name="tumba" Height="379" Margin="238,57,238,110" Width="540" Source="tumba (1).png" Grid.Row="3" Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Center" Visibility="Hidden"/>
-        <Label x:Name="onomatopeyaComiendo" Content="Ñam Ñam Ñam..." HorizontalAlignment="Left" Margin="144,141,0,0" Grid.Row="4" VerticalAlignment="Top" Width="233" FontSize="24" FontFamily="Palatino Linotype" Grid.Column="1" FontWeight="Bold" Height="49" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Label x:Name="onomatopeyaComiendo" Content="Ñam Ñam Ñam..." Margin="144,118,10,95" Grid.Row="3" FontSize="24" FontFamily="Palatino Linotype" Grid.Column="1" FontWeight="Bold" RenderTransformOrigin="0.528,-0.061" Visibility="Hidden"/>
         <Image x:Name="muerte" Grid.Column="3" HorizontalAlignment="Left" Height="169" Margin="56,0,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="174" Source="muerte.png" Visibility="Hidden"/>
         <Image x:Name="comerLogo" Grid.Column="3" HorizontalAlignment="Left" Height="127" Margin="61,16,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="141" Source="tenedor.png" Visibility="Hidden"/>
         <Image x:Name="dormirLogo" Grid.Column="3" HorizontalAlignment="Left" Height="111" Margin="79,32,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="142" Source="noche.png" Visibility="Hidden"/>
@@ -1479,14 +1480,14 @@
             <Image x:Name="logroDormirmini" Height="78" Source="logroDormirMini.png" Visibility="Hidden"/>
         </StackPanel>
         <WrapPanel Margin="11,74,10,53" Grid.Row="4" Background="#7FB2E7F0" Grid.RowSpan="2">
-            <Image x:Name="im_logroGorro" Source="PremioGorro.png" Margin="25,20,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 10 seg" Visibility="Hidden"/>
-            <Image x:Name="im_logroPiruleta" Source="PremioPiruleta.png" Margin="10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 20 seg" Visibility="Hidden"/>
-            <Image x:Name="im_logroMascarilla" Source="PremioMascarilla.png" Margin="25,0,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 30 seg" Visibility="Hidden"/>
-            <Image x:Name="im_logroIglu" Source="PremioMascarilla.png" Margin="10,0,25,25" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 40 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroGorro" Source="PremioGorro.png" Margin="20,10,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 10 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroPiruleta" Source="PremioPiruleta.png" Margin="20,10,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 20 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroMascarilla" Source="PremioMascarilla.png" Margin="20,10,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 30 seg" Visibility="Hidden"/>
+            <Image x:Name="im_logroIglu" Source="PremioMascarilla.png" Margin="20,10,10,10" Height="75" Width="75" Cursor="Hand" ToolTip="Vivió 40 seg" Visibility="Hidden"/>
         </WrapPanel>
         <Label x:Name="lbl_cuidado" Content="¡CUIDADO!" Grid.Column="3" HorizontalAlignment="Center" Margin="17,16,2,36" VerticalAlignment="Center" FontFamily="Verdana" FontSize="36" FontWeight="Bold" Foreground="#FFEE0C0C" Width="246" Height="61" Grid.RowSpan="2" Visibility="Hidden"/>
-        <Label Content="Coleccionables" Margin="0,10,19,213" Grid.Row="3" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
-        <Image x:Name="im_jugar" Grid.Column="3" HorizontalAlignment="Left" Height="127" Margin="61,32,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="141" Source="baile.png" Visibility="Hidden"/>
+        <Label Content="Coleccionables" Margin="0,10,63,213" Grid.Row="3" FontSize="22" FontFamily="Verdana" FontWeight="Bold" Grid.Column="3"/>
+        <Image x:Name="jugarLogo" Grid.Column="3" HorizontalAlignment="Left" Height="127" Margin="61,32,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="141" Source="baile.png" Visibility="Hidden"/>
         <Grid Height="200" Margin="20.523,149,0,0" Grid.Row="4" Grid.RowSpan="2" Width="450" Grid.Column="1" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20*"/>

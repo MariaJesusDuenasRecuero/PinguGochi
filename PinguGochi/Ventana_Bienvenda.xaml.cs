@@ -24,13 +24,17 @@ namespace PinguGochi
         {
             InitializeComponent();
             this.menu_Principal = menu_Principal;
-
+            
         }
 
         private void btn_aceptar_Click(object sender, RoutedEventArgs e)
         {
-            menu_Principal.setNombre(txt_nombre.Text);
-            this.Close();
+           
+                btn_aceptar.IsEnabled = true;
+                menu_Principal.setNombre(txt_nombre.Text);
+                this.Close();
+            
+            
         }
     }
 }
