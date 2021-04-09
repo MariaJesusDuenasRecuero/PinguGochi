@@ -269,5 +269,17 @@
   <ItemGroup>
     <Resource Include="logroJugarMini.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fiebre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fiebre %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="termometro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="termometro %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,13 +30,10 @@ namespace PinguGochi
         int tickCagar = 0;
         int tickDormir = 0;
         int tickJugar = 0;
-        
         int tiempo_vida = 0;
         double decremento = 1.0;
         String nombre;
 
-
-        //public object TimeMeasure { get; private set; }
 
         public MainWindow()
         {
@@ -66,13 +63,11 @@ namespace PinguGochi
             }
         }
 
-        /// <summary>
-        /// crear evento
-        /// </summary>
+        
 
         private void reloj(object sender, EventArgs e)
         {
-            //logros(sender, e);
+            
             premios_coleccionables(sender, e);
             puntuacionTiempoVida(sender, e);
             Cambio_colores(sender, e);
@@ -122,17 +117,13 @@ namespace PinguGochi
                 this.jugarLogo.Visibility = Visibility.Hidden;
 
 
-
+              
 
 
 
             }
         }
-        /// <summary>
-        /// Animaciones que se desarrollan con la interaccion de los botones
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+       
         private void btn_Alimentar_Click(object sender, RoutedEventArgs e)
         {
             this.prgBar_Alimento.Value += 15;
@@ -243,12 +234,10 @@ namespace PinguGochi
             Storyboard sbBailar = (Storyboard)this.Resources["animacionBailarIcon"];
             sbBailar.Begin();
             btn_divertir.IsEnabled = true;
-           // bolaBlanca.Visibility = Visibility.Visible;
-           // bolaClara.Visibility = Visibility.Visible;
-           // bolaOscura.Visibility = Visibility.Visible;
+           
 
             tickJugar++;
-            if (tickJugar == 5)
+            if (tickJugar == 4)
             {
                 Storyboard sbJugaar = (Storyboard)this.Resources["animacionLogroJugar"];
                 sbJugaar.Begin();
@@ -292,7 +281,7 @@ namespace PinguGochi
             comerLogo.Visibility = Visibility.Hidden;
             pez.Visibility = Visibility.Hidden;
             tickComer++;
-            if (tickComer == 6)
+            if (tickComer == 3)
             {
                 Storyboard sbComer = (Storyboard)this.Resources["animacionLogroComer"];
                 sbComer.Begin();
@@ -332,6 +321,10 @@ namespace PinguGochi
                     case 2:
                         im_caca2.Visibility = Visibility.Visible;
                         im_caca1.Visibility = Visibility.Hidden;
+                        termometro.Visibility = Visibility.Visible;
+                        temperaturaAlta.Visibility = Visibility.Visible;
+                        btnCurar.Visibility = Visibility.Visible;
+                        btnCurar.IsEnabled = true;
                         break;
                     case 3:
                         im_caca1.Visibility = Visibility.Visible;
@@ -340,6 +333,10 @@ namespace PinguGochi
                     case 4:
                         im_caca2.Visibility = Visibility.Visible;
                         im_caca1.Visibility = Visibility.Hidden;
+                        termometro.Visibility = Visibility.Visible;
+                        temperaturaAlta.Visibility = Visibility.Visible;
+                        btnCurar.Visibility = Visibility.Visible;
+                        btnCurar.IsEnabled = true;
                         break;
 
                 }
@@ -360,7 +357,7 @@ namespace PinguGochi
             DataObject data0 = new DataObject(((Image)sender));
             DragDrop.DoDragDrop((Image)sender, data0, DragDropEffects.Move);
 
-            //mascarilla.Visibility = Visibility.Visible;
+           
         }
 
         private void colocarColeccionable(object sender, DragEventArgs e)
@@ -453,8 +450,6 @@ namespace PinguGochi
             }
         }
 
-      
-
         private void premios_coleccionables(object sender, EventArgs e)
         {
             if (tiempo_vida == 10)
@@ -515,5 +510,13 @@ namespace PinguGochi
         }
 
 
+        private void btnCurar_Click(object sender, RoutedEventArgs e)
+        {
+            termometro.Visibility = Visibility.Hidden;
+            temperaturaAlta.Visibility = Visibility.Hidden;
+            btnCurar.Visibility = Visibility.Hidden;
+            btnCurar.IsEnabled = false;
+
+        }
     }
 }
