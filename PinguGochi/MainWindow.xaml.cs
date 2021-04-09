@@ -453,16 +453,7 @@ namespace PinguGochi
             }
         }
 
-       /* private void estadoBajo(object sender, EventArgs e)
-        {
-            if (prgBar_Alimento.Value <= 25 && prgBar_Alimento.Value > 15)
-            {
-                bocadilloAburrido.Visibility = Visibility.Visible;
-                bocadilloCansado.Visibility = Visibility.Visible;
-                bocadilloHambriento.Visibility = Visibility.Visible;
-
-            }
-        }*/
+      
 
         private void premios_coleccionables(object sender, EventArgs e)
         {
