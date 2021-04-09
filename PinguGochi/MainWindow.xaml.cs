@@ -432,9 +432,9 @@ namespace PinguGochi
                 prgBar_Alimento.Foreground = new SolidColorBrush(Colors.Orange);
                 prgB_Cansancio.Foreground = new SolidColorBrush(Colors.Orange);
                 prgB_Diversión.Foreground = new SolidColorBrush(Colors.Orange);
-                bocadilloAburrido.Visibility = Visibility.Visible;
-                bocadilloCansado.Visibility = Visibility.Visible;
-                bocadilloHambriento.Visibility = Visibility.Visible;
+                bocadilloAburrido.Visibility = Visibility.Hidden;
+                bocadilloCansado.Visibility = Visibility.Hidden;
+                bocadilloHambriento.Visibility = Visibility.Hidden;
                 
             }
             else if (prgBar_Alimento.Value <= 15 || prgB_Cansancio.Value <= 15 || prgB_Diversión.Value <= 15)
@@ -446,9 +446,23 @@ namespace PinguGochi
                 im_conSueño.Visibility = Visibility.Visible;
                 im_hambriento.Visibility = Visibility.Visible;
                 lbl_cuidado.Visibility = Visibility.Visible;
+                bocadilloAburrido.Visibility = Visibility.Visible;
+                bocadilloCansado.Visibility = Visibility.Visible;
+                bocadilloHambriento.Visibility = Visibility.Visible;
 
             }
         }
+
+       /* private void estadoBajo(object sender, EventArgs e)
+        {
+            if (prgBar_Alimento.Value <= 25 && prgBar_Alimento.Value > 15)
+            {
+                bocadilloAburrido.Visibility = Visibility.Visible;
+                bocadilloCansado.Visibility = Visibility.Visible;
+                bocadilloHambriento.Visibility = Visibility.Visible;
+
+            }
+        }*/
 
         private void premios_coleccionables(object sender, EventArgs e)
         {
