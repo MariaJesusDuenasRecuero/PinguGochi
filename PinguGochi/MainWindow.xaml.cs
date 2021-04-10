@@ -212,7 +212,7 @@ namespace PinguGochi
             pupilaIzquierda.BeginAnimation(Ellipse.HeightProperty, cerrarPupila);
 
             tickDormir++;
-            if (tickDormir == 3)
+            if (tickDormir == 6)
             {
                 Storyboard sbDormir = (Storyboard)this.Resources["animacionLogroDormir"];
                 sbDormir.Begin();
@@ -237,7 +237,7 @@ namespace PinguGochi
            
 
             tickJugar++;
-            if (tickJugar == 4)
+            if (tickJugar == 6)
             {
                 Storyboard sbJugaar = (Storyboard)this.Resources["animacionLogroJugar"];
                 sbJugaar.Begin();
@@ -281,7 +281,7 @@ namespace PinguGochi
             comerLogo.Visibility = Visibility.Hidden;
             pez.Visibility = Visibility.Hidden;
             tickComer++;
-            if (tickComer == 3)
+            if (tickComer == 7)
             {
                 Storyboard sbComer = (Storyboard)this.Resources["animacionLogroComer"];
                 sbComer.Begin();
@@ -295,7 +295,7 @@ namespace PinguGochi
             tickCagar++;
             im_caca1.Visibility = Visibility.Hidden;
             im_caca2.Visibility = Visibility.Hidden;
-            if (tickCagar == 2)
+            if (tickCagar == 3)
             {
                 Storyboard sbCaga = (Storyboard)this.Resources["animacionLogroCagar"];
                 sbCaga.Begin();
@@ -307,7 +307,7 @@ namespace PinguGochi
 
         private void cagar(object sender, EventArgs e)
         {
-            if (prgBar_Alimento.Value % 15== 0)
+            if (prgBar_Alimento.Value % 7== 0)
             {
                 Random rdn = new Random();
                 int random = rdn.Next(1, 4);

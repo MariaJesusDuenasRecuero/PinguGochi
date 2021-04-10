@@ -12,9 +12,9 @@
         </Grid.ColumnDefinitions>
         <Image Height="342" Width="620" Source="5c1fa78a0dce6-wallpaper-preview.jpg" VerticalAlignment="Center" HorizontalAlignment="Center" Opacity="0.4" Margin="0,19,0,22"/>
         <Button x:Name="btn_aceptar" Content="Jugar" HorizontalAlignment="Left" Margin="493,311,0,0" VerticalAlignment="Top" Width="83" Height="32" Click="btn_aceptar_Click" FontSize="16" FontFamily="Verdana"/>
-        <Label x:Name="lbl_nombrePingu" HorizontalAlignment="Left" Margin="24,53,0,0" VerticalAlignment="Top" Height="33" Width="586" FontSize="16" FontFamily="Verdana" FontWeight="Bold" Content="Debido al calentamiento global Pingu  perdió a toda su familia "/>
+        <Label x:Name="lbl_nombrePingu" HorizontalAlignment="Left" Margin="24,53,0,0" VerticalAlignment="Top" Height="33" Width="586" FontSize="16" FontFamily="Verdana" FontWeight="Bold" Content="Debido al calentamiento global Pingu  perdió a toda su familia. "/>
         <TextBox x:Name="txt_nombre" HorizontalAlignment="Left" Height="23" Margin="196,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Verdana"/>
-        <Label x:Name="lbl_nombrePingu_Copy" HorizontalAlignment="Left" Margin="24,91,0,0" VerticalAlignment="Top" Height="33" Width="586" FontSize="16" FontFamily="Verdana" FontWeight="Bold" Content="gracias a ti fue encontrado y ahora vive feliz y contento pero"/>
+        <Label x:Name="lbl_nombrePingu_Copy" HorizontalAlignment="Left" Margin="24,91,0,0" VerticalAlignment="Top" Height="33" Width="572" FontSize="16" FontFamily="Verdana" FontWeight="Bold" Content="Gracias a ti fue encontrado y ahora vive feliz y contento pero"/>
         <Label x:Name="lbl_nombrePingu_Copy1" HorizontalAlignment="Left" Margin="24,129,0,0" VerticalAlignment="Top" Height="33" Width="586" FontSize="16" FontFamily="Verdana" FontWeight="Bold" Content="necesita de tu compañía y cuidados para que su esperanza de "/>
         <Label x:Name="lbl_nombrePingu_Copy2" HorizontalAlignment="Left" Margin="24,167,0,0" VerticalAlignment="Top" Height="33" Width="586" FontSize="16" FontFamily="Verdana" FontWeight="Bold" Content="vida no corra peligro ¿Quieres ayudarle? Pingu necesita saber"/>
         <Label Content="tu nombre" HorizontalAlignment="Left" Margin="24,200,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Verdana" FontWeight="Bold"/>
