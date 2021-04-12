@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PinguGochi"
         mc:Ignorable="d"
-        Title="Ventana_Bienvenda" Height="412" Width="626" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+        Title="Bienvenido" Height="412" Width="626" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
     <Grid Margin="1,0,-1,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
